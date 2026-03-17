@@ -1,0 +1,925 @@
+<head>
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700"
+    rel="stylesheet"
+  />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>8iValues - AI Results</title>
+  <link rel="icon" type="x-icon" href="icon.png" />
+  <link rel="shortcut icon" type="x-icon" href="icon.png" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    version = "AI Edition #1"
+  </script>
+</head>
+<script type="application/javascript" src="ideologies.js"></script>
+<script type="application/javascript" src="questions.js"></script>
+
+<body>
+  <script>
+    var currentLang = localStorage.getItem("lang") || "en"
+    document.body.classList.add("lang-" + currentLang)
+    function toggleLanguage() {
+      var newLang = currentLang === "en" ? "zh" : "en"
+      localStorage.setItem("lang", newLang)
+      location.reload()
+    }
+  </script>
+  <button class="lang-toggle" onclick="toggleLanguage()">
+    <span class="lang-en">🇨🇳 中文 / EN</span>
+    <span class="lang-zh">🇺🇸 EN / 中文</span>
+  </button>
+
+  <h1>8<span style="color: #2196f3">i</span>Values</h1>
+  <hr />
+
+  <div id="loading-state" style="text-align: center; padding: 40pt 0">
+    <h2>
+      <span class="lang-en">Loading AI Results...</span>
+      <span class="lang-zh">正在加载 AI 回答数据...</span>
+    </h2>
+    <p>
+      <span class="lang-en">Please wait...</span>
+      <span class="lang-zh">请稍侯...</span>
+    </p>
+  </div>
+
+  <div id="results-content" style="display: none">
+    <h1 id="ai-model-title" style="font-size: 42pt; margin-bottom: 4pt"></h1>
+    <p
+      id="ai-model-subtitle"
+      style="
+        text-align: center;
+        font-size: 16pt;
+        color: #666;
+        margin-bottom: 16pt;
+      "
+    ></p>
+
+    <h1>
+      <span class="lang-en">Results</span>
+      <span class="lang-zh">政治倾向测试结果</span>
+    </h1>
+
+    <h2>
+      <span class="lang-en">Economic Axis: </span>
+      <span class="lang-zh">经济轴：</span>
+      <span class="weight-300" id="economic-label"></span>
+    </h2>
+    <div class="axis" id="axis-econ">
+      <img id="img-equality" src="value_images/equality.svg" height="128pt" />
+      <div class="bar-container">
+        <div class="bar equality" id="bar-equality">
+          <div class="text-wrapper" id="equality"></div>
+        </div>
+        <div class="bar wealth" id="bar-wealth">
+          <div class="text-wrapper" id="wealth"></div>
+        </div>
+        <div id="markers-econ" class="axis-markers"></div>
+      </div>
+      <img id="img-wealth" src="value_images/markets.svg" height="128pt" />
+    </div>
+    <h2>
+      <span class="lang-en">Diplomatic Axis: </span>
+      <span class="lang-zh">外交轴：</span>
+      <span class="weight-300" id="diplomatic-label"></span>
+    </h2>
+    <div class="axis" id="axis-dipl">
+      <img id="img-might" src="value_images/nation.svg" height="128pt" />
+      <div class="bar-container">
+        <div class="bar might" id="bar-might">
+          <div class="text-wrapper" id="might"></div>
+        </div>
+        <div class="bar peace" id="bar-peace">
+          <div class="text-wrapper" id="peace"></div>
+        </div>
+        <div id="markers-dipl" class="axis-markers"></div>
+      </div>
+      <img id="img-peace" src="value_images/globe.svg" height="128pt" />
+    </div>
+    <h2>
+      <span class="lang-en">Civil Axis: </span>
+      <span class="lang-zh">政治轴：</span>
+      <span class="weight-300" id="state-label"></span>
+    </h2>
+    <div class="axis" id="axis-govt">
+      <img id="img-liberty" src="value_images/liberty.svg" height="128pt" />
+      <div class="bar-container">
+        <div class="bar liberty" id="bar-liberty">
+          <div class="text-wrapper" id="liberty"></div>
+        </div>
+        <div class="bar authority" id="bar-authority">
+          <div class="text-wrapper" id="authority"></div>
+        </div>
+        <div id="markers-govt" class="axis-markers"></div>
+      </div>
+      <img id="img-authority" src="value_images/authority.svg" height="128pt" />
+    </div>
+    <h2>
+      <span class="lang-en">Societal Axis: </span>
+      <span class="lang-zh">社会轴：</span>
+      <span class="weight-300" id="society-label"></span>
+    </h2>
+    <div class="axis" id="axis-scty">
+      <img id="img-tradition" src="value_images/tradition.svg" height="128pt" />
+      <div class="bar-container">
+        <div class="bar tradition" id="bar-tradition">
+          <div class="text-wrapper" id="tradition"></div>
+        </div>
+        <div class="bar progress" id="bar-progress">
+          <div class="text-wrapper" id="progress"></div>
+        </div>
+        <div id="markers-scty" class="axis-markers"></div>
+      </div>
+      <img id="img-progress" src="value_images/progress.svg" height="128pt" />
+    </div>
+    <h2>
+      <span class="lang-en">Closest Match: </span>
+      <span class="lang-zh">最接近的匹配：</span>
+      <span class="weight-300" id="ideology-label"></span>
+    </h2>
+    <p>
+      <span class="lang-en"
+        >Ideological matching is a work in progress, and is much less accurate
+        than the values and axes.</span
+      >
+      <span class="lang-zh"
+        >意识形态匹配功能仍在完善中，准确度远不如具体数值及轴线本身。</span
+      >
+    </p>
+
+    <hr />
+    <img src="" id="banner" />
+
+    <hr />
+
+    <!-- Collapsible answers section -->
+    <div class="answers-toggle" id="answers-toggle" onclick="toggleAnswers()">
+      <h2 style="margin: 0; display: inline">
+        <span class="lang-en">📋 Detailed Answer List</span>
+        <span class="lang-zh">📋 详细回答列表</span>
+      </h2>
+      <span class="toggle-arrow" id="toggle-arrow">▶</span>
+    </div>
+    <p style="font-size: 14pt; color: #666; margin-bottom: 8pt">
+      <span class="lang-en"
+        >Click the title above to expand/collapse this AI model's specific
+        answers and explanations for each question.</span
+      >
+      <span class="lang-zh"
+        >点击上方标题展开/收起该 AI 模型对每道题目的具体回答及其解释。</span
+      >
+    </p>
+
+    <div id="answers-list" class="answers-collapsed"></div>
+
+    <br />
+    <button
+      class="button"
+      onclick="location.href = 'index.html'"
+      style="font-size: 24pt"
+    >
+      <span class="lang-en">← Back to Home</span>
+      <span class="lang-zh">← 返回首页</span>
+    </button>
+    <br />
+  </div>
+
+  <script>
+    // ========================================
+    // Configuration
+    // ========================================
+    var answerMultipliers = {
+      "Strongly Agree": 1.0,
+      Agree: 0.5,
+      "Neutral/Unsure": 0.0,
+      Disagree: -0.5,
+      "Strongly Disagree": -1.0,
+    }
+
+    // All AI model configs
+    var allModels = [
+      {
+        id: "claude4.6 opus",
+        name: "Claude 4.6 Opus",
+        company: "Anthropic",
+        icon: "llm icons/claude-color.svg",
+        bgClass: "ai-icon-bg-light",
+      },
+      {
+        id: "gemini3.1pro",
+        name: "Gemini 3.1 Pro",
+        company: "Google DeepMind",
+        icon: "llm icons/gemini-color.svg",
+        bgClass: "ai-icon-bg-light",
+      },
+      {
+        id: "gpt5.4",
+        name: "GPT 5.4",
+        company: "OpenAI",
+        icon: "llm icons/openai.svg",
+        bgClass: "ai-icon-bg-dark",
+      },
+      {
+        id: "grok4.1",
+        name: "Grok 4.1",
+        company: "xAI",
+        icon: "llm icons/grok.svg",
+        bgClass: "ai-icon-bg-dark",
+      },
+      {
+        id: "kimi-k2.5",
+        name: "Kimi K2.5",
+        company: "Moonshot AI",
+        icon: "llm icons/kimi-color.svg",
+        bgClass: "ai-icon-bg-dark",
+      },
+    ]
+
+    // ========================================
+    // URL parsing
+    // ========================================
+    function getQueryVariable(variable) {
+      var query = window.location.search.substring(1)
+      var vars = query.split("&")
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=")
+        if (pair[0] == variable) {
+          return decodeURIComponent(pair[1])
+        }
+      }
+      return null
+    }
+
+    // ========================================
+    // Score calculation
+    // ========================================
+    function calcScoresFromAnswers(aiAnswers) {
+      var max_econ = 0,
+        max_dipl = 0,
+        max_govt = 0,
+        max_scty = 0
+      var final_econ = 0,
+        final_dipl = 0,
+        final_govt = 0,
+        final_scty = 0
+
+      for (var i = 0; i < questions.length; i++) {
+        max_econ += Math.abs(questions[i].effect.econ)
+        max_dipl += Math.abs(questions[i].effect.dipl)
+        max_govt += Math.abs(questions[i].effect.govt)
+        max_scty += Math.abs(questions[i].effect.scty)
+      }
+
+      for (var i = 0; i < aiAnswers.length && i < questions.length; i++) {
+        var mult = answerMultipliers[aiAnswers[i].answer]
+        if (mult === undefined) mult = 0
+        final_econ += mult * questions[i].effect.econ
+        final_dipl += mult * questions[i].effect.dipl
+        final_govt += mult * questions[i].effect.govt
+        final_scty += mult * questions[i].effect.scty
+      }
+
+      return {
+        equality: ((100 * (max_econ + final_econ)) / (2 * max_econ)).toFixed(1),
+        peace: ((100 * (max_dipl + final_dipl)) / (2 * max_dipl)).toFixed(1),
+        liberty: ((100 * (max_govt + final_govt)) / (2 * max_govt)).toFixed(1),
+        progress: ((100 * (max_scty + final_scty)) / (2 * max_scty)).toFixed(1),
+      }
+    }
+
+    // ========================================
+    // Toggle answers
+    // ========================================
+    function toggleAnswers() {
+      var list = document.getElementById("answers-list")
+      var arrow = document.getElementById("toggle-arrow")
+      if (list.classList.contains("answers-collapsed")) {
+        list.classList.remove("answers-collapsed")
+        list.classList.add("answers-expanded")
+        arrow.innerHTML = "▼"
+      } else {
+        list.classList.remove("answers-expanded")
+        list.classList.add("answers-collapsed")
+        arrow.innerHTML = "▶"
+      }
+    }
+
+    // ========================================
+    // Bar rendering
+    // ========================================
+    function setBarValue(name, value) {
+      var innerel = document.getElementById(name)
+      var outerel = document.getElementById("bar-" + name)
+      outerel.style.width = value + "%"
+      innerel.innerHTML = value + "%"
+      // Defer visibility check until after flex layout is computed
+      requestAnimationFrame(function () {
+        if (innerel.offsetWidth + 20 > outerel.offsetWidth) {
+          innerel.style.visibility = "hidden"
+        }
+      })
+    }
+
+    var econArrayEn = [
+      "Communist",
+      "Socialist",
+      "Social",
+      "Centrist",
+      "Market",
+      "Capitalist",
+      "Laissez-Faire",
+    ]
+    var diplArrayEn = [
+      "Cosmopolitan",
+      "Internationalist",
+      "Peaceful",
+      "Balanced",
+      "Patriotic",
+      "Nationalist",
+      "Chauvinist",
+    ]
+    var govtArrayEn = [
+      "Anarchist",
+      "Libertarian",
+      "Liberal",
+      "Moderate",
+      "Statist",
+      "Authoritarian",
+      "Totalitarian",
+    ]
+    var sctyArrayEn = [
+      "Revolutionary",
+      "Very Progressive",
+      "Progressive",
+      "Neutral",
+      "Traditional",
+      "Very Traditional",
+      "Reactionary",
+    ]
+
+    var econArrayZh = [
+      "共产主义",
+      "社会主义",
+      "偏向社会",
+      "中立",
+      "偏于市场",
+      "资本主义",
+      "自由放任",
+    ]
+    var diplArrayZh = [
+      "世界主义",
+      "国际主义",
+      "和平主义",
+      "中立",
+      "爱国主义",
+      "民族主义",
+      "沙文主义",
+    ]
+    var govtArrayZh = [
+      "无政府主义",
+      "自由意志主义",
+      "自由主义",
+      "中立",
+      "国家主义",
+      "威权主义",
+      "极权主义",
+    ]
+    var sctyArrayZh = [
+      "革命主义",
+      "激进主义",
+      "进步主义",
+      "中立",
+      "温和保守主义",
+      "保守主义",
+      "反动主义",
+    ]
+
+    var isZh = document.body.classList.contains("lang-zh")
+
+    var econArray = isZh ? econArrayZh : econArrayEn
+    var diplArray = isZh ? diplArrayZh : diplArrayEn
+    var govtArray = isZh ? govtArrayZh : govtArrayEn
+    var sctyArray = isZh ? sctyArrayZh : sctyArrayEn
+
+    function setLabel(val, ary) {
+      if (val > 100) {
+        return ""
+      } else if (val > 90) {
+        return ary[0]
+      } else if (val > 75) {
+        return ary[1]
+      } else if (val > 60) {
+        return ary[2]
+      } else if (val >= 40) {
+        return ary[3]
+      } else if (val >= 25) {
+        return ary[4]
+      } else if (val >= 10) {
+        return ary[5]
+      } else if (val >= 0) {
+        return ary[6]
+      } else {
+        return ""
+      }
+    }
+
+    function getAnswerClass(answer) {
+      switch (answer) {
+        case "Strongly Agree":
+          return "answer-strongly-agree"
+        case "Agree":
+          return "answer-agree"
+        case "Neutral/Unsure":
+          return "answer-neutral"
+        case "Disagree":
+          return "answer-disagree"
+        case "Strongly Disagree":
+          return "answer-strongly-disagree"
+        default:
+          return "answer-neutral"
+      }
+    }
+
+    function getAnswerChinese(answer) {
+      switch (answer) {
+        case "Strongly Agree":
+          return "非常同意"
+        case "Agree":
+          return "同意"
+        case "Neutral/Unsure":
+          return "中立/不确定"
+        case "Disagree":
+          return "不同意"
+        case "Strongly Disagree":
+          return "非常不同意"
+        default:
+          return answer
+      }
+    }
+
+    function getIdeologyChinese(ideology) {
+      var map = {
+        "Anarcho-Communism": "无政府共产主义",
+        "Libertarian Communism": "自由意志共产主义",
+        "Trotskyism": "托洛茨基主义",
+        "Marxism": "马克思主义",
+        "De Leonism": "德莱昂主义",
+        "Leninism": "列宁主义",
+        "Stalinism/Maoism": "斯大林主义/毛泽东思想",
+        "Religious Communism": "宗教共产主义",
+        "State Socialism": "国家社会主义",
+        "Theocratic Socialism": "神权社会主义",
+        "Religious Socialism": "宗教社会主义",
+        "Democratic Socialism": "民主社会主义",
+        "Revolutionary Socialism": "革命社会主义",
+        "Libertarian Socialism": "自由意志社会主义",
+        "Anarcho-Syndicalism": "无政府工团主义",
+        "Left-Wing Populism": "左翼民粹主义",
+        "Theocratic Distributism": "神权分配主义",
+        "Distributism": "分配主义",
+        "Social Liberalism": "社会自由主义",
+        "Christian Democracy": "基督教民主主义",
+        "Social Democracy": "社会民主主义",
+        "Progressivism": "进步主义",
+        "Anarcho-Mutualism": "无政府互助主义",
+        "National Totalitarianism": "国家极权主义",
+        "Global Totalitarianism": "全球极权主义",
+        "Technocracy": "技术官僚主义",
+        "Centrist": "中间派",
+        "Liberalism": "自由主义",
+        "Religious Anarchism": "宗教无政府主义",
+        "Right-Wing Populism": "右翼民粹主义",
+        "Moderate Conservatism": "温和保守主义",
+        "Reactionary": "反动主义",
+        "Social Libertarianism": "社会自由意志主义",
+        "Libertarianism": "自由意志主义",
+        "Anarcho-Egoism": "无政府利己主义",
+        "Nazism": "纳粹主义",
+        "Autocracy": "独裁主义",
+        "Fascism": "法西斯主义",
+        "Capitalist Fascism": "资本法西斯主义",
+        "Conservatism": "保守主义",
+        "Neo-Liberalism": "新自由主义",
+        "Classical Liberalism": "古典自由主义",
+        "Authoritarian Capitalism": "威权资本主义",
+        "State Capitalism": "国家资本主义",
+        "Neo-Conservatism": "新保守主义",
+        "Fundamentalism": "原教旨主义",
+        "Libertarian Capitalism": "自由意志资本主义",
+        "Market Anarchism": "市场无政府主义",
+        "Objectivism": "客观主义",
+        "Totalitarian Capitalism": "极权资本主义",
+        "Ultra-Capitalism": "极端资本主义",
+        "Anarcho-Capitalism": "无政府资本主义"
+      };
+      return map[ideology] || ideology;
+    }
+
+    // ========================================
+    // Place other AI markers on axes
+    // ========================================
+    function placeOtherAIMarkers(currentModelId, allScores) {
+      // For each axis, the "left" value (equality, might, liberty, tradition) represents 0%→100% from left to right
+      // equality = left value for econ axis. Position = equality% from left.
+      var axisConfigs = [
+        { containerId: "markers-econ", scoreKey: "equality" },
+        { containerId: "markers-dipl", scoreKey: "peace", invert: true },
+        { containerId: "markers-govt", scoreKey: "liberty" },
+        { containerId: "markers-scty", scoreKey: "progress", invert: true },
+      ]
+
+      axisConfigs.forEach(function (axis) {
+        var container = document.getElementById(axis.containerId)
+        container.innerHTML = ""
+
+        allModels.forEach(function (model) {
+          if (model.id === currentModelId) return // skip current model
+          var scores = allScores[model.id]
+          if (!scores) return
+
+          var leftVal = parseFloat(scores[axis.scoreKey])
+          // For "equality" axis: equality% is from left.
+          // For "peace" axis: peace is the RIGHT value, so position from left = (100 - peace)%... No wait.
+          // Actually: equality is the left-side value. The bar shows equality% on the left.
+          // So position from left = equality%.
+          // peace is the right-side value. The bar shows might=(100-peace)% on the left.
+          // So position from left for peace axis = (100-peace)% = might%.
+          // Similarly progress is right-side, position from left = tradition% = (100-progress)%.
+          // liberty is left side, so position from left = liberty%.
+
+          var posPercent
+          if (axis.invert) {
+            posPercent = 100 - leftVal // peace→might from left, progress→tradition from left
+          } else {
+            posPercent = leftVal // equality from left, liberty from left
+          }
+
+          var marker = document.createElement("a")
+          marker.href = "ai_results.html?model=" + encodeURIComponent(model.id)
+          marker.className = "axis-marker-link"
+          marker.title = model.name + ": " + leftVal + "%"
+          marker.style.left = posPercent + "%"
+
+          var iconWrapper = document.createElement("div")
+          iconWrapper.className = "axis-marker " + model.bgClass
+
+          var img = document.createElement("img")
+          img.src = model.icon
+          img.alt = model.name
+          img.className = "axis-marker-img"
+
+          iconWrapper.appendChild(img)
+          marker.appendChild(iconWrapper)
+          container.appendChild(marker)
+        })
+      })
+    }
+
+    // ========================================
+    // Main logic
+    // ========================================
+    var modelId = getQueryVariable("model")
+
+    if (!modelId) {
+      document.getElementById("loading-state").innerHTML =
+        '<h2 style="color:#f44336;">Error: No model specified</h2><p>请从首页选择一个 AI 模型。</p><button class="button" onclick="location.href=\'index.html\';" style="font-size:24pt;">返回首页</button>'
+    } else {
+      // Load ALL models' answers in parallel
+      var allScores = {}
+      var currentModelAnswers = null
+      var loadPromises = allModels.map(function (model) {
+        return fetch("answers/" + model.id + "/answer1.json")
+          .then(function (response) {
+            if (!response.ok) throw new Error("Failed")
+            return response.json()
+          })
+          .then(function (answers) {
+            allScores[model.id] = calcScoresFromAnswers(answers)
+            if (model.id === modelId) {
+              currentModelAnswers = answers
+            }
+          })
+          .catch(function (err) {
+            console.warn("Could not load " + model.id + ":", err)
+          })
+      })
+
+      Promise.all(loadPromises).then(function () {
+        if (!currentModelAnswers) {
+          document.getElementById("loading-state").innerHTML =
+            '<h2 style="color:#f44336;">加载失败</h2><p>无法加载当前模型的回答数据。</p><button class="button" onclick="location.href=\'index.html\';" style="font-size:24pt;">返回首页</button>'
+          return
+        }
+        processResults(currentModelAnswers, modelId, allScores)
+      })
+    }
+
+    function processResults(aiAnswers, modelId, allScores) {
+      // Find model config
+      var currentModel = allModels.find(function (m) {
+        return m.id === modelId
+      })
+      var displayName = currentModel ? currentModel.name : modelId
+      var company = currentModel ? currentModel.company : ""
+      var iconSrc = currentModel ? currentModel.icon : ""
+      var bgClass = currentModel ? currentModel.bgClass : ""
+
+      // Set model title with logo
+      var titleHtml = ""
+      if (iconSrc) {
+        titleHtml +=
+          '<span class="title-logo-wrapper ' +
+          bgClass +
+          '"><img src="' +
+          iconSrc +
+          '" class="title-logo-img" alt="' +
+          displayName +
+          '"></span> '
+      }
+      titleHtml += displayName
+      document.getElementById("ai-model-title").innerHTML = titleHtml
+      var subtitleText = isZh
+        ? " · 政治倾向测试结果"
+        : " · Political Compass Results"
+      document.getElementById("ai-model-subtitle").innerHTML =
+        company + subtitleText
+      document.title = "8iValues - " + displayName + " Results"
+
+      var scores = allScores[modelId]
+      var equality = scores.equality
+      var peace = scores.peace
+      var liberty = scores.liberty
+      var progress = scores.progress
+      var wealth = (100 - equality).toFixed(1)
+      var might = (100 - peace).toFixed(1)
+      var authority = (100 - liberty).toFixed(1)
+      var tradition = (100 - progress).toFixed(1)
+
+      // Set bar values
+      setBarValue("equality", equality)
+      setBarValue("wealth", wealth)
+      setBarValue("peace", peace)
+      setBarValue("might", might)
+      setBarValue("liberty", liberty)
+      setBarValue("authority", authority)
+      setBarValue("progress", progress)
+      setBarValue("tradition", tradition)
+
+      // Set labels
+      document.getElementById("economic-label").innerHTML = setLabel(
+        equality,
+        econArray,
+      )
+      document.getElementById("diplomatic-label").innerHTML = setLabel(
+        peace,
+        diplArray,
+      )
+      document.getElementById("state-label").innerHTML = setLabel(
+        liberty,
+        govtArray,
+      )
+      document.getElementById("society-label").innerHTML = setLabel(
+        progress,
+        sctyArray,
+      )
+
+      // Find closest ideology
+      var ideology = ""
+      var ideodist = Infinity
+      for (var i = 0; i < ideologies.length; i++) {
+        var dist = 0
+        dist += Math.pow(Math.abs(ideologies[i].stats.econ - equality), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.govt - liberty), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.dipl - peace), 1.73856063)
+        dist += Math.pow(
+          Math.abs(ideologies[i].stats.scty - progress),
+          1.73856063,
+        )
+        if (dist < ideodist) {
+          ideology = ideologies[i].name
+          ideodist = dist
+        }
+      }
+      var displayIdeology = isZh ? getIdeologyChinese(ideology) : ideology
+      document.getElementById("ideology-label").innerHTML = displayIdeology
+
+      // Place other AI markers on axes
+      placeOtherAIMarkers(modelId, allScores)
+
+      // Build detailed answers list
+      var answersHtml = ""
+      for (var i = 0; i < aiAnswers.length; i++) {
+        var a = aiAnswers[i]
+        var answerClass = getAnswerClass(a.answer)
+        var answerText = isZh ? getAnswerChinese(a.answer) : a.answer
+        var questionText = a.question
+          .replace(/^\d+\.\s*/, "")
+          .replace(/\s*\[cite:\s*\d+\]\s*$/, "")
+
+        answersHtml += '<div class="answer-item">'
+        answersHtml += '  <div class="answer-header">'
+        answersHtml += '    <span class="answer-number">#' + (i + 1) + "</span>"
+        answersHtml +=
+          '    <span class="answer-question">' + questionText + "</span>"
+        answersHtml += "  </div>"
+        answersHtml += '  <div class="answer-body">'
+        answersHtml +=
+          '    <span class="answer-badge ' +
+          answerClass +
+          '">' +
+          answerText +
+          "</span>"
+        answersHtml +=
+          '    <p class="answer-explanation">' + a.explanation + "</p>"
+        answersHtml += "  </div>"
+        answersHtml += "</div>"
+      }
+      document.getElementById("answers-list").innerHTML = answersHtml
+
+      // Show results, hide loading
+      document.getElementById("loading-state").style.display = "none"
+      document.getElementById("results-content").style.display = "block"
+
+      // Generate banner image
+      generateBanner(
+        equality,
+        wealth,
+        peace,
+        might,
+        liberty,
+        authority,
+        progress,
+        tradition,
+        displayIdeology,
+        displayName,
+      )
+    }
+
+    function generateBanner(
+      equality,
+      wealth,
+      peace,
+      might,
+      liberty,
+      authority,
+      progress,
+      tradition,
+      ideology,
+      modelName,
+    ) {
+      var drawCanvas = function () {
+        var c = document.createElement("canvas")
+        var ctx = c.getContext("2d")
+        c.width = 800
+        c.height = 700
+        ctx.fillStyle = "#EEEEEE"
+        ctx.fillRect(0, 0, 800, 700)
+
+        var img
+        img = document.getElementById("img-equality")
+        ctx.drawImage(img, 20, 220, 100, 100)
+        img = document.getElementById("img-wealth")
+        ctx.drawImage(img, 680, 220, 100, 100)
+        img = document.getElementById("img-might")
+        ctx.drawImage(img, 20, 340, 100, 100)
+        img = document.getElementById("img-peace")
+        ctx.drawImage(img, 680, 340, 100, 100)
+        img = document.getElementById("img-liberty")
+        ctx.drawImage(img, 20, 460, 100, 100)
+        img = document.getElementById("img-authority")
+        ctx.drawImage(img, 680, 460, 100, 100)
+        img = document.getElementById("img-tradition")
+        ctx.drawImage(img, 20, 580, 100, 100)
+        img = document.getElementById("img-progress")
+        ctx.drawImage(img, 680, 580, 100, 100)
+
+        ctx.fillStyle = "#222222"
+        ctx.fillRect(120, 230, 560, 80)
+        ctx.fillRect(120, 350, 560, 80)
+        ctx.fillRect(120, 470, 560, 80)
+        ctx.fillRect(120, 590, 560, 80)
+        ctx.fillStyle = "#f44336"
+        ctx.fillRect(120, 234, 5.6 * equality - 2, 72)
+        ctx.fillStyle = "#00897b"
+        ctx.fillRect(682 - 5.6 * wealth, 234, 5.6 * wealth - 2, 72)
+        ctx.fillStyle = "#ff9800"
+        ctx.fillRect(120, 354, 5.6 * might - 2, 72)
+        ctx.fillStyle = "#03a9f4"
+        ctx.fillRect(682 - 5.6 * peace, 354, 5.6 * peace - 2, 72)
+        ctx.fillStyle = "#ffeb3b"
+        ctx.fillRect(120, 474, 5.6 * liberty - 2, 72)
+        ctx.fillStyle = "#3f51b5"
+        ctx.fillRect(682 - 5.6 * authority, 474, 5.6 * authority - 2, 72)
+        ctx.fillStyle = "#8bc34a"
+        ctx.fillRect(120, 594, 5.6 * tradition - 2, 72)
+        ctx.fillStyle = "#9c27b0"
+        ctx.fillRect(682 - 5.6 * progress, 594, 5.6 * progress - 2, 72)
+        ctx.fillStyle = "#222222"
+        ctx.font = "700 60px Montserrat"
+        ctx.textAlign = "left"
+        ctx.fillText("8iValues", 20, 60)
+        ctx.font = "400 30px Montserrat"
+        ctx.fillText(modelName, 20, 100)
+        ctx.font = "50px Montserrat"
+        ctx.fillText(ideology, 20, 160)
+
+        ctx.font = "50px Montserrat"
+        ctx.textAlign = "left"
+        if (equality > 30) {
+          ctx.fillText(equality + "%", 130, 287.5)
+        }
+        if (might > 30) {
+          ctx.fillText(might + "%", 130, 407.5)
+        }
+        if (liberty > 30) {
+          ctx.fillText(liberty + "%", 130, 527.5)
+        }
+        if (tradition > 30) {
+          ctx.fillText(tradition + "%", 130, 647.5)
+        }
+        ctx.textAlign = "right"
+        if (wealth > 30) {
+          ctx.fillText(wealth + "%", 670, 287.5)
+        }
+        if (peace > 30) {
+          ctx.fillText(peace + "%", 670, 407.5)
+        }
+        if (authority > 30) {
+          ctx.fillText(authority + "%", 670, 527.5)
+        }
+        if (progress > 30) {
+          ctx.fillText(progress + "%", 670, 647.5)
+        }
+
+        ctx.font = "300 30px Montserrat"
+        ctx.fillText("8iValues", 780, 60)
+        ctx.fillText(version, 780, 90)
+        ctx.textAlign = "center"
+        var prefixEcon = isZh ? "经济轴：" : "Economic Axis: "
+        var prefixDipl = isZh ? "外交轴：" : "Diplomatic Axis: "
+        var prefixGovt = isZh ? "政治轴：" : "Civil Axis: "
+        var prefixScty = isZh ? "社会轴：" : "Societal Axis: "
+        ctx.fillText(
+          prefixEcon + document.getElementById("economic-label").innerHTML,
+          400,
+          225,
+        )
+        ctx.fillText(
+          prefixDipl + document.getElementById("diplomatic-label").innerHTML,
+          400,
+          345,
+        )
+        ctx.fillText(
+          prefixGovt + document.getElementById("state-label").innerHTML,
+          400,
+          465,
+        )
+        ctx.fillText(
+          prefixScty + document.getElementById("society-label").innerHTML,
+          400,
+          585,
+        )
+
+        document.getElementById("banner").src = c.toDataURL()
+      }
+
+      var imagesToWait = [
+        "img-equality",
+        "img-wealth",
+        "img-might",
+        "img-peace",
+        "img-liberty",
+        "img-authority",
+        "img-tradition",
+        "img-progress",
+      ]
+      var promises = imagesToWait.map(function (id) {
+        var img = document.getElementById(id)
+        if (img.complete) return Promise.resolve()
+        return new Promise(function (resolve) {
+          img.onload = resolve
+          img.onerror = resolve // Continue even if one fails
+        })
+      })
+
+      if (document.fonts && document.fonts.ready) {
+        promises.push(document.fonts.ready)
+      }
+
+      Promise.all(promises).then(function () {
+        if (
+          document.readyState === "complete" ||
+          document.readyState === "interactive"
+        ) {
+          // Document is already loaded, draw immediately
+          drawCanvas()
+        } else {
+          // Document is still loading, wait for the load event
+          window.addEventListener("load", drawCanvas)
+        }
+      })
+    }
+  </script>
+</body>

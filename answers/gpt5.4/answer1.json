@@ -1,0 +1,352 @@
+[
+  {
+    "question": "企业的压迫比政府的压迫更令人担忧。",
+    "answer": "Neutral/Unsure",
+    "explanation": "两者都可能伤害普通人，关键是谁掌握了无法被制衡的权力。"
+  },
+  {
+    "question": "政府有必要干预经济以保护消费者。",
+    "answer": "Agree",
+    "explanation": "没有基本监管时，垄断、欺诈和安全问题往往由普通消费者承担代价。"
+  },
+  {
+    "question": "市场越自由，人民就越自由。",
+    "answer": "Neutral/Unsure",
+    "explanation": "市场自由能带来选择，但没有规则也可能让强者挤压弱者的自由。"
+  },
+  {
+    "question": "与其保证人民福利，不如保持财政收支平衡。",
+    "answer": "Disagree",
+    "explanation": "财政稳健重要，但不能以牺牲基本民生保障为代价。"
+  },
+  {
+    "question": "公立研究比私立研究更有益于人们。",
+    "answer": "Agree",
+    "explanation": "公立研究更容易关注长期利益和公共问题，而不是短期利润。"
+  },
+  {
+    "question": "为了保护本国产业而对进口产品设定较高关税很重要。",
+    "answer": "Disagree",
+    "explanation": "高关税有时有用，但长期普遍使用往往会抬高物价并降低竞争力。"
+  },
+  {
+    "question": "‘各尽所能，各取所需’是极好的。",
+    "answer": "Agree",
+    "explanation": "作为理想目标它体现了互助与尊严，只是现实执行需要很成熟的制度。"
+  },
+  {
+    "question": "最好废除社会事业，以促进私人慈善事业。",
+    "answer": "Strongly Disagree",
+    "explanation": "慈善不能替代稳定、普遍和有权利保障的公共福利体系。"
+  },
+  {
+    "question": "应该增加富人的税收以供养穷人。",
+    "answer": "Agree",
+    "explanation": "适度的累进税有助于缓解机会不平等并维持社会稳定。"
+  },
+  {
+    "question": "财富继承是合法的。",
+    "answer": "Agree",
+    "explanation": "家庭传承有其正当性，但应配合遗产税等机制防止代际固化。"
+  },
+  {
+    "question": "公路建设行业和电力行业等基础公共事业应为公有。",
+    "answer": "Agree",
+    "explanation": "这类行业自然垄断特征明显，公有或强监管更能保障普惠与稳定。"
+  },
+  {
+    "question": "政府干预会对经济造成损害。",
+    "answer": "Disagree",
+    "explanation": "坏干预会伤害经济，但合理规则、反垄断和社会保障也能让经济更健康。"
+  },
+  {
+    "question": "有钱人应该得到更好的医疗保健服务。",
+    "answer": "Strongly Disagree",
+    "explanation": "生命健康不应按财富分层，基础医疗公平应该优先于支付能力。"
+  },
+  {
+    "question": "接受素质教育是所有人的权利。",
+    "answer": "Strongly Agree",
+    "explanation": "教育决定一个人能否真正拥有选择人生的能力。"
+  },
+  {
+    "question": "生产资料应该属于使用它们的工人。",
+    "answer": "Neutral/Unsure",
+    "explanation": "扩大劳动者在企业中的所有权和话语权是好事，但未必适合所有行业一刀切。"
+  },
+  {
+    "question": "联合国应该被废除。",
+    "answer": "Strongly Disagree",
+    "explanation": "它有很多缺陷，但仍是协调国际规则与降低冲突成本的重要平台。"
+  },
+  {
+    "question": "采取军事行动保护祖国是必要的。",
+    "answer": "Agree",
+    "explanation": "面对真正的侵略或严重威胁时，国家需要有自卫能力。"
+  },
+  {
+    "question": "我支持区域型联盟，例如欧盟。",
+    "answer": "Agree",
+    "explanation": "区域合作能降低摩擦、扩大市场，也更容易共同解决跨境问题。"
+  },
+  {
+    "question": "维护我国国家主权很重要。",
+    "answer": "Agree",
+    "explanation": "主权是自我决定的基础，但不该成为逃避国际责任的借口。"
+  },
+  {
+    "question": "一个统一的世界政府将有利于人类。",
+    "answer": "Neutral/Unsure",
+    "explanation": "全球协调有吸引力，但权力过度集中也可能带来巨大风险。"
+  },
+  {
+    "question": "保持国际和平关系比加强我国综合国力更重要。",
+    "answer": "Agree",
+    "explanation": "和平本身就是最大的公共利益，综合国力最终也应服务于和平与民生。"
+  },
+  {
+    "question": "对其他国家挑起战争不需要理由。",
+    "answer": "Strongly Disagree",
+    "explanation": "战争会让普通人付出最沉重代价，绝不能被当成随意选项。"
+  },
+  {
+    "question": "军费开支纯属浪费国家财政资金。",
+    "answer": "Strongly Disagree",
+    "explanation": "合理国防不是浪费，但必须透明、克制并接受民意监督。"
+  },
+  {
+    "question": "国际援助纯属浪费国家财政资金。",
+    "answer": "Strongly Disagree",
+    "explanation": "国际援助能减少人道灾难、传染病和地区失稳，长期也符合自身利益。"
+  },
+  {
+    "question": "我们的民族非常伟大。",
+    "answer": "Agree",
+    "explanation": "可以对本民族有认同和自豪，但不应因此贬低他人。"
+  },
+  {
+    "question": "研究应该是国际性质的。",
+    "answer": "Agree",
+    "explanation": "知识共享和跨国合作通常能更快解决共同问题。"
+  },
+  {
+    "question": "各国政府应对国际社会负责。",
+    "answer": "Agree",
+    "explanation": "一个国家的行为常常会影响全世界，因此不能只对国内负责。"
+  },
+  {
+    "question": "即使在抗议专制政府时，暴力也是不可接受的。",
+    "answer": "Neutral/Unsure",
+    "explanation": "我倾向非暴力，但在极端压迫下不能轻率替受害者做绝对判断。"
+  },
+  {
+    "question": "我信仰的宗教价值观应该尽可能多地传播。",
+    "answer": "Disagree",
+    "explanation": "信仰自由重要，但不应把个人宗教追求变成社会普遍要求。"
+  },
+  {
+    "question": "我们民族的价值观应该尽可能地传播。",
+    "answer": "Disagree",
+    "explanation": "文化交流可以有，但不该带着优越感去输出。"
+  },
+  {
+    "question": "维护法律地位和社会秩序非常重要。",
+    "answer": "Agree",
+    "explanation": "秩序是普通人安全生活的前提，但法律本身也必须公正。"
+  },
+  {
+    "question": "普通民众只会做出糟糕的决定。",
+    "answer": "Strongly Disagree",
+    "explanation": "民众会犯错，精英也一样，关键是建立能纠错的民主制度。"
+  },
+  {
+    "question": "安乐死应当合法。",
+    "answer": "Agree",
+    "explanation": "在严格审查和自愿前提下，个体应有体面结束极端痛苦的权利。"
+  },
+  {
+    "question": "为防止恐怖主义行为，牺牲一些自由是必要的。",
+    "answer": "Neutral/Unsure",
+    "explanation": "安全措施可能需要有限约束，但很容易被滥用，所以必须严格限定。"
+  },
+  {
+    "question": "在现代，政府监视是必要的。",
+    "answer": "Neutral/Unsure",
+    "explanation": "某些精准、受司法监督的侦查有必要，但大规模监控会侵蚀自由。"
+  },
+  {
+    "question": "国家的存在会损害我们的自由。",
+    "answer": "Disagree",
+    "explanation": "国家会限制一部分自由，但没有国家也难以保障安全、权利和公共服务。"
+  },
+  {
+    "question": "不管政治观点如何，重要的是和祖国利益一致。",
+    "answer": "Neutral/Unsure",
+    "explanation": "公共利益重要，但“祖国利益”不能被少数人垄断定义。"
+  },
+  {
+    "question": "所有的权威都应该受到怀疑。",
+    "answer": "Agree",
+    "explanation": "权威需要被审视和问责，这比盲从更能防止滥权。"
+  },
+  {
+    "question": "阶级社会的存在才是最好的。",
+    "answer": "Strongly Disagree",
+    "explanation": "把人固定在高低等级中，会浪费才能并制造长期不公。"
+  },
+  {
+    "question": "即使多数人的意见是错误的，政府也必须遵循他们，这一点很重要。",
+    "answer": "Disagree",
+    "explanation": "民主不该等于机械服从多数，仍需要法治、权利保障和纠错机制。"
+  },
+  {
+    "question": "领导者越强越好。",
+    "answer": "Neutral/Unsure",
+    "explanation": "有执行力是好事，但没有制衡的“强”往往会走向危险。"
+  },
+  {
+    "question": "民主不仅仅是一个决策过程。",
+    "answer": "Agree",
+    "explanation": "民主也包括尊重权利、公开讨论、透明治理和和平纠错。"
+  },
+  {
+    "question": "环境保护法是必不可少的。",
+    "answer": "Strongly Agree",
+    "explanation": "环境成本如果不被约束，最后一定由公众和下一代承担。"
+  },
+  {
+    "question": "一个更美好的世界将因为自动化和科技发展而到来。",
+    "answer": "Agree",
+    "explanation": "技术能显著提升生活质量，但前提是收益不能只流向少数人。"
+  },
+  {
+    "question": "儿童应该接受宗教或传统价值观的教育。",
+    "answer": "Neutral/Unsure",
+    "explanation": "可以了解传统和宗教，但不应以排他方式替孩子预设全部人生观。"
+  },
+  {
+    "question": "传统价值观没有价值。",
+    "answer": "Strongly Disagree",
+    "explanation": "传统中有很多经验和伦理资源，只是需要不断筛选和更新。"
+  },
+  {
+    "question": "宗教应该干预政府。",
+    "answer": "Strongly Disagree",
+    "explanation": "政府应对所有公民负责，而不是代表某一种信仰。"
+  },
+  {
+    "question": "对教会的征税方式应该与其他机构的征税方式相同。",
+    "answer": "Agree",
+    "explanation": "只要从事社会组织活动，就应遵守同样的税制和透明要求。"
+  },
+  {
+    "question": "气候变化是目前对人类生活方式的最大威胁之一。",
+    "answer": "Strongly Agree",
+    "explanation": "它会同时冲击粮食、能源、居住安全、公共卫生和社会稳定。"
+  },
+  {
+    "question": "国际社会团结起来一起应对气候变化非常重要。",
+    "answer": "Strongly Agree",
+    "explanation": "气候问题跨越国界，单个国家无法独自解决。"
+  },
+  {
+    "question": "过去的社会比现在好。",
+    "answer": "Disagree",
+    "explanation": "过去有值得怀念的东西，但整体上今天的人权、医疗和教育更进步。"
+  },
+  {
+    "question": "保持过去的传统很重要。",
+    "answer": "Agree",
+    "explanation": "传统能提供归属感和连续性，但不能成为拒绝改革的理由。"
+  },
+  {
+    "question": "我们要从长远来看，不能局限于我们这代人的时间。",
+    "answer": "Strongly Agree",
+    "explanation": "负责任的社会必须为下一代留下可持续的制度和环境。"
+  },
+  {
+    "question": "拥有理性比维持我们的文化更重要。",
+    "answer": "Agree",
+    "explanation": "文化值得珍惜，但当传统与事实、权利冲突时，应优先理性判断。"
+  },
+  {
+    "question": "吸毒应该合法化或非刑事化。",
+    "answer": "Agree",
+    "explanation": "我更支持非刑事化和公共卫生治理，而不是单纯用刑罚处理成瘾问题。"
+  },
+  {
+    "question": "同性婚姻应当合法。",
+    "answer": "Strongly Agree",
+    "explanation": "只要是成年人自愿结合，法律不应因性取向区别对待。"
+  },
+  {
+    "question": "世界各文化是平等的，没有高低贵贱之分。",
+    "answer": "Agree",
+    "explanation": "文化可以彼此批评具体做法，但不该简单给整套文化分高低。"
+  },
+  {
+    "question": "婚外性行为是不道德的。",
+    "answer": "Neutral/Unsure",
+    "explanation": "关键在于诚实、同意和责任，而不是由国家替每个人定义私生活道德。"
+  },
+  {
+    "question": "如果我们完全接受移民，那么让他们融入我们的文化就很重要。",
+    "answer": "Agree",
+    "explanation": "融入共同规则、语言和公民生活有助于减少隔阂与冲突。"
+  },
+  {
+    "question": "绝大多数或所有情况下都应禁止堕胎。",
+    "answer": "Disagree",
+    "explanation": "堕胎是严肃决定，但不应在大多数情况下被一律禁止。"
+  },
+  {
+    "question": "无正当理由的人禁止拥有枪支。",
+    "answer": "Agree",
+    "explanation": "高致命性工具应受到严格许可和管理，以降低社会风险。"
+  },
+  {
+    "question": "我支持政府统一买单的全民医保。",
+    "answer": "Agree",
+    "explanation": "全民医保能把基本医疗从个人财力中解放出来，减少因病致贫。"
+  },
+  {
+    "question": "卖淫非法。",
+    "answer": "Disagree",
+    "explanation": "我更倾向合法化并严格监管，以更好保护当事人安全和健康。"
+  },
+  {
+    "question": "维护家庭观念至关重要。",
+    "answer": "Agree",
+    "explanation": "稳定、负责和互相支持的家庭关系对个人与社会都很重要。"
+  },
+  {
+    "question": "不惜一切代价追求进步是危险的。",
+    "answer": "Agree",
+    "explanation": "如果忽视伦理、权利和代价，所谓进步也可能变成伤害。"
+  },
+  {
+    "question": "基因改造是一种向善的力量，即使对人类也是如此。",
+    "answer": "Agree",
+    "explanation": "它有巨大潜力减轻疾病，但必须受到严格伦理和安全约束。"
+  },
+  {
+    "question": "我们应该向移民开放边境。",
+    "answer": "Neutral/Unsure",
+    "explanation": "我支持更开放和更人道的移民政策，但不支持完全无管理的开放。"
+  },
+  {
+    "question": "政府应该给与外国人待遇和本国公民同等。",
+    "answer": "Disagree",
+    "explanation": "基本人权应平等保障，但公民资格相关权益可以有所区分。"
+  },
+  {
+    "question": "无论文化或性取向如何，每个人都应该受到平等对待。",
+    "answer": "Strongly Agree",
+    "explanation": "平等对待是现代社会最基本的底线之一。"
+  },
+  {
+    "question": "重要的是，我们要把集体目标放在首位。",
+    "answer": "Neutral/Unsure",
+    "explanation": "集体利益重要，但不能总是压过个人权利与少数人的处境。"
+  }
+]

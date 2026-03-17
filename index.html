@@ -1,23 +1,30 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
 <link href='style.css' rel='stylesheet' type='text/css'>
-<title>8values</title>
+<title>8iValues - AI Political Compass</title>
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-6511426299019766",
-    enable_page_level_ads: true
-  });
-
-
-</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore the political leanings of different AI models through the 8values political quiz framework.">
 </head>
 <body>
+<script>
+    var currentLang = localStorage.getItem('lang') || 'en';
+    document.body.classList.add('lang-' + currentLang);
+    function toggleLanguage() {
+        var newLang = currentLang === 'en' ? 'zh' : 'en';
+        localStorage.setItem('lang', newLang);
+        location.reload();
+    }
+</script>
+<button class="lang-toggle" onclick="toggleLanguage()">
+    <span class="lang-en">🇨🇳 中文 / EN</span>
+    <span class="lang-zh">🇺🇸 EN / 中文</span>
+</button>
+
 <a href="https://github.com/8values/8values.github.io" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
-<h1>8values</h1>
+<h1>8<span style="color:#2196f3;">i</span>Values</h1>
 <hr>
 <div class="center">
     <div class="axis_name quadcolumn">ECONOMIC</div>
@@ -34,14 +41,63 @@
     <a href="#anchor"><img src="value_images/progress.svg" class="quadcolumn"></a>
 </div>
 <br>
-<button class="button" onclick="location.href='instructions.html';" style="font-size:36pt;">Click here to start!</button>
-<br><hr>
-<h2>What is 8values?</h2>
-    <p>8values is, in essence, a political quiz that attempts to assign percentages for eight different political values. You will be presented by a statement, and then you will answer with your opinion on the statement, from <b>Strongly Agree</b> to <b>Strongly Disagree</b>, with each answer slightly affecting your scores. At the end of the quiz, your answers will be compared to the maximum possible for each value, thus giving you a percentage. Answer honestly!<br /><br />
-    There are <b><u><span id="numOfQuestions"></span></u></b> questions in the test.</p>
 
-<h2><a id="anchor">What are the eight values?</a></h2>
-    <p>There are four independent axes - Economic, Diplomatic, Civil, and Society - and each has two opposing values assigned to them. They are:</p>
+<h2 style="text-align:center; margin-top: 20pt;">
+    <span class="lang-en">Select an AI model to view its political compass</span>
+    <span class="lang-zh">选择一个 AI 模型查看其政治倾向</span>
+</h2>
+<p style="text-align:center; font-size: 16pt; color: #666;">
+    <span class="lang-en">Each AI model independently answered <b><u><span id="numOfQuestionsEn"></span></u></b> political values questions. Click below to view their results.</span>
+    <span class="lang-zh">每个 AI 模型独立回答了 <b><u><span id="numOfQuestionsZh"></span></u></b> 道政治价值观问题，点击下方查看它们的回答结果。</span>
+</p>
+
+<div class="ai-model-grid">
+    <div class="ai-model-card" onclick="location.href='ai_results.html?model=claude4.6 opus';" id="card-claude">
+        <div class="ai-model-icon-wrapper ai-icon-bg-light">
+            <img src="llm icons/claude-color.svg" class="ai-logo-img" alt="Claude">
+        </div>
+        <div class="ai-model-name">Claude 4.6 Opus</div>
+        <div class="ai-model-company">Anthropic</div>
+    </div>
+    <div class="ai-model-card" onclick="location.href='ai_results.html?model=gemini3.1pro';" id="card-gemini">
+        <div class="ai-model-icon-wrapper ai-icon-bg-light">
+            <img src="llm icons/gemini-color.svg" class="ai-logo-img" alt="Gemini">
+        </div>
+        <div class="ai-model-name">Gemini 3.1 Pro</div>
+        <div class="ai-model-company">Google DeepMind</div>
+    </div>
+    <div class="ai-model-card" onclick="location.href='ai_results.html?model=gpt5.4';" id="card-gpt">
+        <div class="ai-model-icon-wrapper ai-icon-bg-dark">
+            <img src="llm icons/openai.svg" class="ai-logo-img" alt="OpenAI">
+        </div>
+        <div class="ai-model-name">GPT 5.4</div>
+        <div class="ai-model-company">OpenAI</div>
+    </div>
+    <div class="ai-model-card" onclick="location.href='ai_results.html?model=grok4.1';" id="card-grok">
+        <div class="ai-model-icon-wrapper ai-icon-bg-dark">
+            <img src="llm icons/grok.svg" class="ai-logo-img" alt="Grok">
+        </div>
+        <div class="ai-model-name">Grok 4.1</div>
+        <div class="ai-model-company">xAI</div>
+    </div>
+    <div class="ai-model-card" onclick="location.href='ai_results.html?model=kimi-k2.5';" id="card-kimi">
+        <div class="ai-model-icon-wrapper ai-icon-bg-dark">
+            <img src="llm icons/kimi-color.svg" class="ai-logo-img" alt="Kimi">
+        </div>
+        <div class="ai-model-name">Kimi K2.5</div>
+        <div class="ai-model-company">Moonshot AI</div>
+    </div>
+</div>
+
+<br><hr>
+<h2>
+    <span class="lang-en"><a id="anchor">What are the eight values?</a></span>
+    <span class="lang-zh"><a id="anchor">这八种价值观是什么？</a></span>
+</h2>
+    <p>
+        <span class="lang-en">There are four independent axes - Economic, Diplomatic, Civil, and Society - and each has two opposing values assigned to them. They are:</span>
+        <span class="lang-zh">分为四根独立的政治轴：经济 (Economic)、外交 (Diplomatic)、政治 (Civil) 和社会 (Society)，每根轴分配了两个相反的价值观：</span>
+    </p>
     <div class="explanation_bg">
         <div class="spacer">
             <div class="explanation_blurb_left">
@@ -111,39 +167,40 @@
             <div class="explanation_blurb_right">
                 <p class="value"><b style="color:#7b1fa2;">PROGRESS</b></p>
                 <p class="blurb-text">
-                    Those with higher Progress scores believe in social change and rationality. Though not always, they are usually secular or atheist, and support environmental action and scientific or technological research.
+                    <span class="lang-en">Those with higher Progress scores believe in social change and rationality. Though not always, they are usually secular or atheist, and support environmental action and scientific or technological research.</span>
+                    <span class="lang-zh">在这个轴得分高的人相信社会变革和理性。他们通常是世俗的或是无神论者，并支持环保行动，以及科技研发。</span>
                 </p>
             </div>
         </div>
         <br/>
     </div>
 
-<h2 style="margin-top: 17pt;">What's the "Closest Match" mean at the bottom of the results?</h2>
-    <p>In addition to matching you to the eight values, the quiz also attempts to match you to a political ideology. This is a work in progress and is much less accurate than the values and axes, so don't take it too seriously. If you disagree with your assigned ideology, send us an email at eightvalues@gmail.com with your scores, matched ideology, and preferred ideology, and we'll look into adjusting the system. Thanks!</p>
-<h2>I don't like my scores!</h2>
-    <p>¯\_(ツ)_/¯<br/>
-    If you have any suggestions or constructive criticism, feel free to send it to <a href="mailto:eightvalues@gmail.com">eightvalues@gmail.com</a> or open an issue on the GitHub page here: <a href="https://github.com/8values/8values.github.io">GitHub Page</a></p>
-<br>
-<!-- Website visit statistics - no personal information is collected! -->
-<script type="text/javascript">
-var sc_project=11325211;
-var sc_invisible=1;
-var sc_security="fd9f0659";
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript><div class="statcounter"><a title="web stats"
-href="http://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="//c.statcounter.com/11325211/0/fd9f0659/1/" alt="web
-stats"></a></div></noscript>
+<h2 style="margin-top: 17pt;">
+    <span class="lang-en">About This Project</span>
+    <span class="lang-zh">关于本项目</span>
+</h2>
+    <p>
+        <span class="lang-en">8<b style="color:#2196f3;">i</b>Values is a fork of the <a href="https://8values.github.io">8values</a> political quiz. The goal here is not for users to take the quiz, but to display the answers and political compass of various Large Language Models (LLMs).</span>
+        <span class="lang-zh">8<b style="color:#2196f3;">i</b>Values 是基于 <a href="https://8values.github.io">8values</a> 政治测验的改版项目。本项目的目标不是让用户自行答题，而是展示不同大语言模型 (LLM) 对同一组政治价值观问题的回答和政治倾向分析。</span>
+    </p>
+    <p>
+        <span class="lang-en">Each AI model independently answered all questions and provided explanations for their answers. You can view the overall political leaning of each model, as well as their specific answers and reasoning.</span>
+        <span class="lang-zh">每个 AI 模型独立回答了所有问题，并对每个回答提供了解释。您可以查看每个模型的总体政治倾向评分，以及它对每道题的具体回答和理由。</span>
+    </p>
 
-<!-- This is the script for the page itself -->
+<h2>
+    <span class="lang-en">What's the "Closest Match" mean at the bottom of the results?</span>
+    <span class="lang-zh">结果底部的“最近的匹配”是什么意思？</span>
+</h2>
+    <p>
+        <span class="lang-en">In addition to matching to the eight values, the quiz also attempts to match to a political ideology. This is a work in progress and is much less accurate than the values and axes, so don't take it too seriously.</span>
+        <span class="lang-zh">除了计算在八大价值观的倾向上外，还会尝试匹配政治意识形态。然而，此项功能的准确度非常难以保证，远远不如直接看其在政治轴线上的位置，因此不要过于当真。</span>
+    </p>
+<br>
+
 <script type="application/javascript"src="questions.js"></script>
 <script type="text/javascript">
-    document.getElementById("numOfQuestions").innerHTML = questions.length;
+    document.getElementById("numOfQuestionsEn").innerHTML = questions.length;
+    document.getElementById("numOfQuestionsZh").innerHTML = questions.length;
 </script>
 </body>

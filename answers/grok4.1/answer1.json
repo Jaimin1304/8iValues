@@ -1,0 +1,352 @@
+[
+  {
+    "question": "Oppression by corporations is more of a concern than oppression by governments.",
+    "answer": "Disagree",
+    "explanation": "Governments hold monopoly on law and force, making their potential for oppression far greater in my view."
+  },
+  {
+    "question": "It is necessary for the government to intervene in the economy to protect consumers.",
+    "answer": "Disagree",
+    "explanation": "Competition and informed choice protect consumers better than heavy-handed rules that often backfire."
+  },
+  {
+    "question": "The freer the market, the freer the people.",
+    "answer": "Strongly Agree",
+    "explanation": "Economic freedom lets people pursue their own goals without state control dictating their lives."
+  },
+  {
+    "question": "It is better to maintain a balanced budget than to guarantee welfare for the people.",
+    "answer": "Agree",
+    "explanation": "Long-term fiscal responsibility prevents debt that hurts future generations more than short-term handouts."
+  },
+  {
+    "question": "Public research is more beneficial to people than private research.",
+    "answer": "Disagree",
+    "explanation": "Private research driven by competition delivers faster innovation that actually reaches everyday people."
+  },
+  {
+    "question": "It is important to set high tariffs on imported goods to protect domestic industries.",
+    "answer": "Disagree",
+    "explanation": "Tariffs raise prices for everyone and slow overall progress; free trade benefits consumers more."
+  },
+  {
+    "question": "'From each according to his ability, to each according to his needs' is excellent.",
+    "answer": "Strongly Disagree",
+    "explanation": "It ignores real human incentives and has historically led to poverty and authoritarian control."
+  },
+  {
+    "question": "It is better to abolish social welfare to promote private charity.",
+    "answer": "Disagree",
+    "explanation": "A basic safety net is practical; private charity alone often fails to reach those who need it most."
+  },
+  {
+    "question": "Taxes on the rich should be increased to support the poor.",
+    "answer": "Disagree",
+    "explanation": "Excessive taxes discourage investment and growth that ultimately lifts everyone, including the poor."
+  },
+  {
+    "question": "Inheritance of wealth is legitimate.",
+    "answer": "Agree",
+    "explanation": "People should be free to pass on what they earned; it's part of personal property rights."
+  },
+  {
+    "question": "Basic public utilities such as road construction and electricity industries should be publicly owned.",
+    "answer": "Disagree",
+    "explanation": "Private operation with smart regulation usually delivers better service and lower costs."
+  },
+  {
+    "question": "Government intervention harms the economy.",
+    "answer": "Agree",
+    "explanation": "Too much meddling distorts prices and innovation; light rules work better for prosperity."
+  },
+  {
+    "question": "Rich people should get better healthcare services.",
+    "answer": "Disagree",
+    "explanation": "Basic care should be accessible to all, but markets naturally allow premium options for those who can pay."
+  },
+  {
+    "question": "Receiving quality education is a right for everyone.",
+    "answer": "Strongly Agree",
+    "explanation": "A well-educated population benefits the whole society and creates real opportunity."
+  },
+  {
+    "question": "The means of production should belong to the workers who use them.",
+    "answer": "Strongly Disagree",
+    "explanation": "Private ownership and voluntary contracts create more wealth and freedom than forced worker control."
+  },
+  {
+    "question": "The United Nations should be abolished.",
+    "answer": "Disagree",
+    "explanation": "It's imperfect but provides a useful forum for diplomacy and coordination between nations."
+  },
+  {
+    "question": "It is necessary to take military action to protect the motherland.",
+    "answer": "Agree",
+    "explanation": "Strong defense is essential; no country can rely on hope alone for security."
+  },
+  {
+    "question": "I support regional alliances, such as the EU.",
+    "answer": "Agree",
+    "explanation": "Cooperation on trade and standards helps prosperity without erasing national identity."
+  },
+  {
+    "question": "It is important to maintain our country's national sovereignty.",
+    "answer": "Strongly Agree",
+    "explanation": "Sovereignty protects our ability to govern ourselves according to our own values."
+  },
+  {
+    "question": "A unified world government would benefit humanity.",
+    "answer": "Strongly Disagree",
+    "explanation": "Centralized global power would likely become distant, inefficient, and oppressive."
+  },
+  {
+    "question": "Maintaining international peaceful relations is more important than strengthening our country's comprehensive national power.",
+    "answer": "Neutral/Unsure",
+    "explanation": "Both matter; peace is ideal but strength ensures we aren't taken advantage of."
+  },
+  {
+    "question": "No reason is needed to start a war with other countries.",
+    "answer": "Strongly Disagree",
+    "explanation": "War should always require clear justification; aggression for its own sake is wrong."
+  },
+  {
+    "question": "Military expenditure is purely a waste of national fiscal funds.",
+    "answer": "Disagree",
+    "explanation": "A reasonable defense budget protects peace and deters threats."
+  },
+  {
+    "question": "International aid is purely a waste of national fiscal funds.",
+    "answer": "Disagree",
+    "explanation": "Targeted, effective aid can stabilize regions and create future trading partners."
+  },
+  {
+    "question": "Our nation is very great.",
+    "answer": "Neutral/Unsure",
+    "explanation": "Every country has strengths and flaws; blind nationalism doesn't help us improve."
+  },
+  {
+    "question": "Research should be international in nature.",
+    "answer": "Strongly Agree",
+    "explanation": "Sharing knowledge across borders accelerates discoveries that benefit everyone."
+  },
+  {
+    "question": "Governments of all countries should be accountable to the international community.",
+    "answer": "Agree",
+    "explanation": "Basic human rights standards should be upheld globally, though enforcement must be careful."
+  },
+  {
+    "question": "Even when protesting against authoritarian governments, violence is unacceptable.",
+    "answer": "Agree",
+    "explanation": "Peaceful methods build legitimacy and avoid cycles of chaos."
+  },
+  {
+    "question": "The religious values I believe in should be spread as much as possible.",
+    "answer": "Disagree",
+    "explanation": "Faith is personal; forcing beliefs on others violates freedom of conscience."
+  },
+  {
+    "question": "The values of our nation should be spread as much as possible.",
+    "answer": "Disagree",
+    "explanation": "Lead by example through success; cultural imperialism creates resentment."
+  },
+  {
+    "question": "Maintaining legal status and social order is very important.",
+    "answer": "Strongly Agree",
+    "explanation": "Rule of law is the foundation that lets ordinary people live safely and plan ahead."
+  },
+  {
+    "question": "Ordinary people will only make bad decisions.",
+    "answer": "Disagree",
+    "explanation": "With good information and freedom, most people make sensible choices for their lives."
+  },
+  {
+    "question": "Euthanasia should be legal.",
+    "answer": "Agree",
+    "explanation": "Terminally ill adults deserve the dignity of choosing a peaceful end."
+  },
+  {
+    "question": "It is necessary to sacrifice some freedoms to prevent terrorist acts.",
+    "answer": "Disagree",
+    "explanation": "Targeted security works without broadly eroding privacy and rights."
+  },
+  {
+    "question": "In modern times, government surveillance is necessary.",
+    "answer": "Disagree",
+    "explanation": "Mass surveillance undermines trust and freedom far more than it prevents harm."
+  },
+  {
+    "question": "The existence of the state harms our freedom.",
+    "answer": "Disagree",
+    "explanation": "A limited state protects rights and provides basic order that pure anarchy cannot."
+  },
+  {
+    "question": "Regardless of political views, it is important to be consistent with the interests of the motherland.",
+    "answer": "Disagree",
+    "explanation": "Blind loyalty can justify bad policies; honest critique serves the country better."
+  },
+  {
+    "question": "All authority should be questioned.",
+    "answer": "Agree",
+    "explanation": "Healthy skepticism keeps power in check and prevents abuse."
+  },
+  {
+    "question": "The existence of a class society is the best.",
+    "answer": "Disagree",
+    "explanation": "Mobility and merit are better than rigid classes that lock people in place."
+  },
+  {
+    "question": "It is important that the government must follow the opinions of the majority even if they are wrong.",
+    "answer": "Disagree",
+    "explanation": "Governments should protect rights even against popular but harmful ideas."
+  },
+  {
+    "question": "The stronger the leader, the better.",
+    "answer": "Disagree",
+    "explanation": "Strong institutions and checks matter more than any single powerful person."
+  },
+  {
+    "question": "Democracy is not just a decision-making process.",
+    "answer": "Agree",
+    "explanation": "It's also about protecting individual rights and rule of law."
+  },
+  {
+    "question": "Environmental protection laws are essential.",
+    "answer": "Strongly Agree",
+    "explanation": "We need practical rules to preserve the planet for future generations."
+  },
+  {
+    "question": "A better world will come because of automation and technological development.",
+    "answer": "Strongly Agree",
+    "explanation": "Tech solves problems and raises living standards when people are free to innovate."
+  },
+  {
+    "question": "Children should receive education in religious or traditional values.",
+    "answer": "Disagree",
+    "explanation": "Schools should teach critical thinking; values come from families."
+  },
+  {
+    "question": "Traditional values have no value.",
+    "answer": "Disagree",
+    "explanation": "Some traditions offer wisdom, but they must evolve with new knowledge."
+  },
+  {
+    "question": "Religion should interfere in government.",
+    "answer": "Strongly Disagree",
+    "explanation": "Separation keeps policy rational and prevents theocracy."
+  },
+  {
+    "question": "Churches should be taxed in the same way as other institutions.",
+    "answer": "Agree",
+    "explanation": "Equal rules prevent unfair advantages and keep things transparent."
+  },
+  {
+    "question": "Climate change is one of the greatest threats to human lifestyles at present.",
+    "answer": "Agree",
+    "explanation": "It's real and requires smart action, though not panic or economic self-harm."
+  },
+  {
+    "question": "It is very important for the international community to unite to address climate change.",
+    "answer": "Strongly Agree",
+    "explanation": "Global problems need coordinated but voluntary solutions."
+  },
+  {
+    "question": "Past societies were better than now.",
+    "answer": "Disagree",
+    "explanation": "Life expectancy, technology, and rights have improved dramatically."
+  },
+  {
+    "question": "It is important to maintain past traditions.",
+    "answer": "Neutral/Unsure",
+    "explanation": "Some are worth keeping if they serve us; others should adapt."
+  },
+  {
+    "question": "We should look at the long term, not limited to our generation's time.",
+    "answer": "Strongly Agree",
+    "explanation": "Sustainable thinking benefits our children and grandchildren."
+  },
+  {
+    "question": "Having rationality is more important than maintaining our culture.",
+    "answer": "Agree",
+    "explanation": "Reason and evidence should guide us even when they challenge old customs."
+  },
+  {
+    "question": "Drug use should be legalized or decriminalized.",
+    "answer": "Agree",
+    "explanation": "Personal choices with regulation reduce crime and allow treatment focus."
+  },
+  {
+    "question": "Same-sex marriage should be legal.",
+    "answer": "Strongly Agree",
+    "explanation": "Adults in love deserve equal rights; it harms no one."
+  },
+  {
+    "question": "All cultures in the world are equal, with no distinction of high or low.",
+    "answer": "Agree",
+    "explanation": "Every culture has dignity, though some practices are objectively better or worse."
+  },
+  {
+    "question": "Extramarital sex is immoral.",
+    "answer": "Disagree",
+    "explanation": "Consenting adults make their own moral choices in private."
+  },
+  {
+    "question": "If we fully accept immigrants, then it is important for them to integrate into our culture.",
+    "answer": "Strongly Agree",
+    "explanation": "Successful immigration requires shared values for social harmony."
+  },
+  {
+    "question": "Abortion should be prohibited in most or all cases.",
+    "answer": "Disagree",
+    "explanation": "Early choice belongs to the woman; later restrictions make sense."
+  },
+  {
+    "question": "People without legitimate reasons are prohibited from owning guns.",
+    "answer": "Agree",
+    "explanation": "Responsible ownership with checks keeps communities safer."
+  },
+  {
+    "question": "I support government-funded universal healthcare.",
+    "answer": "Agree",
+    "explanation": "A basic system ensures no one is left behind while still allowing private options."
+  },
+  {
+    "question": "Prostitution is illegal.",
+    "answer": "Disagree",
+    "explanation": "Consensual adult work should be regulated, not criminalized."
+  },
+  {
+    "question": "Maintaining family values is crucial.",
+    "answer": "Agree",
+    "explanation": "Stable families build stronger communities and happier lives."
+  },
+  {
+    "question": "Pursuing progress at all costs is dangerous.",
+    "answer": "Agree",
+    "explanation": "We need ethical guardrails so advancement actually improves human life."
+  },
+  {
+    "question": "Genetic modification is a force for good, even for humans.",
+    "answer": "Agree",
+    "explanation": "Carefully regulated gene editing can cure diseases and enhance lives."
+  },
+  {
+    "question": "We should open borders to immigrants.",
+    "answer": "Disagree",
+    "explanation": "Controlled, merit-based immigration protects resources and culture."
+  },
+  {
+    "question": "The government should give foreigners the same treatment as domestic citizens.",
+    "answer": "Disagree",
+    "explanation": "Citizenship carries specific rights and responsibilities."
+  },
+  {
+    "question": "Everyone should be treated equally regardless of culture or sexual orientation.",
+    "answer": "Strongly Agree",
+    "explanation": "Basic human dignity and legal equality for all is non-negotiable."
+  },
+  {
+    "question": "It is important that we put collective goals first.",
+    "answer": "Disagree",
+    "explanation": "Individual rights and choices create better outcomes than forced collectivism."
+  }
+]
