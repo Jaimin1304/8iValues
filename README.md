@@ -1,6 +1,6 @@
 # 8iValues
 
-**8iValues** is a customized version of the original [8values](https://github.com/8values/8values.github.io) political quiz, designed specifically to test and compare the political compass and ideological leanings of different Large Language Models (LLMs). 
+**8iValues** is a customized version of the original [8values](https://github.com/8values/8values.github.io) political quiz, designed specifically to test and compare the political compass and ideological leanings of different Large Language Models (LLMs).
 
 Rather than having human users take the quiz, this project showcases pre-recorded results from various leading AI models, providing a detailed breakdown of their answers and explanations across 70 political values questions.
 
