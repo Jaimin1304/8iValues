@@ -6,7 +6,7 @@ Rather than having human users take the quiz, this project showcases pre-recorde
 
 **8iValues** 是基于原版 [8values](https://github.com/8values/8values.github.io) 政治倾向测试的修改版，旨在专门测试和比较不同大语言模型（LLM）的政治倾向与意识形态。
 
-与让用户自行答题不同，本项直接展示了各个主流 AI 模型在 70 道政治价值观问题上的具体回答与解释，并通过数据图表直观对比了它们的政治倾向结果。
+与让用户自行答题不同，本项目直接展示了各个主流 AI 模型在 70 道政治价值观问题上的具体回答与解释，并通过数据图表直观对比了它们的政治倾向结果。
 
 ![Main Page](main_page.png)
 
