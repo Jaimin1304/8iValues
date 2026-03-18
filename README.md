@@ -8,6 +8,8 @@ Rather than having human users take the quiz, this project showcases pre-recorde
 
 与让用户自行答题不同，本项直接展示了各个主流 AI 模型在 70 道政治价值观问题上的具体回答与解释，并通过数据图表直观对比了它们的政治倾向结果。
 
+![Main Page](main_page.png)
+
 ## Features | 功能特色
 
 - 🤖 **AI Model Benchmarking | AI 模型倾向测试**: View comprehensive political compass results for popular LLMs (Claude, Gemini, GPT, Grok, Kimi). | 查看主流大语言模型（Claude、Gemini、GPT、Grok、Kimi）的详细政治倾向测试结果。
