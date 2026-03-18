@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jaimin1304.github.io/8iValues/sitemap.xml
