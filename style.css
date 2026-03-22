@@ -146,7 +146,6 @@ div.axis_name {
 .spacer > div{
     margin-top: 10px;
     display: inline-block;
-    *display: inline; /* For IE7 */
     text-align: center;
 }
 .button {
@@ -664,41 +663,151 @@ span.weight-300 {
    Responsive adjustments
    ============================ */
 @media (max-width: 800px) {
+    body {
+        width: 95%;
+        padding: 1em;
+        border-width: 0;
+    }
+    h1 {
+        font-size: 32pt;
+        line-height: 36pt;
+    }
+    h2 {
+        font-size: 20pt;
+        line-height: 24pt;
+    }
+    p {
+        font-size: 13pt;
+    }
+    .lang-toggle {
+        font-size: 10pt;
+        padding: 6pt 10pt;
+        top: 10pt;
+        left: 10pt;
+    }
+    .button {
+        min-width: unset;
+        width: 90%;
+        font-size: 16pt;
+    }
     .ai-model-grid {
-        gap: 10pt;
+        gap: 8pt;
     }
     .ai-model-card {
-        width: 140pt;
-        padding: 14pt 16pt;
+        width: 45%;
+        padding: 10pt 5pt;
     }
     .ai-model-name {
-        font-size: 14pt;
+        font-size: 12pt;
     }
     .ai-model-icon-wrapper {
-        width: 48pt;
-        height: 48pt;
+        width: 36pt;
+        height: 36pt;
     }
     .ai-logo-img {
-        width: 24pt;
-        height: 24pt;
+        width: 20pt;
+        height: 20pt;
     }
     .answer-body {
         margin-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .answer-badge {
+        min-width: unset;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        margin-bottom: 8pt;
     }
     .answer-header {
         flex-direction: column;
         gap: 4pt;
     }
-    .button {
-        min-width: 300pt;
-        width: 80%;
-    }
     .axis-marker {
-        width: 22pt;
-        height: 22pt;
+        width: 18pt;
+        height: 18pt;
+        border-width: 1px;
     }
     .axis-marker-img {
-        width: 12pt;
-        height: 12pt;
+        width: 10pt;
+        height: 10pt;
+    }
+    /* Value images on index page */
+    .center {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4px;
+        width: 100%;
+        min-width: unset;
+        box-sizing: border-box;
+        padding: 4px;
+    }
+    div.quadcolumn, img.quadcolumn {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    div.axis_name {
+        font-size: 8pt;
+        padding-bottom: 2pt;
+        width: auto !important;
+        margin-bottom: 0px;
+    }
+    /* Explanation text container flow */
+    .spacer {
+        flex-direction: column;
+        align-items: center;
+    }
+    div.explanation_blurb_left, div.explanation_blurb_right {
+        width: 100%;
+        margin-bottom: 12pt;
+    }
+    div.explanation_axis {
+        width: 100%;
+        margin-bottom: 12pt;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .arrow {
+        width: 20%;
+        margin-bottom: 10pt;
+    }
+    p.value {
+        text-indent: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+    /* SVG adjustments on results page */
+    .axis > img {
+        height: auto !important;
+        width: 15vw !important;
+        max-width: 60px;
+    }
+    div.bar {
+        height: 28pt;
+        line-height: 28pt;
+        padding: 4pt;
+        border-width: 1px;
+    }
+    /* Canvas banner max-width */
+    #banner {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    #ai-model-title {
+        font-size: 20pt !important;
+    }
+    #ai-model-subtitle {
+        font-size: 10pt !important;
+    }
+    div.text-wrapper {
+        font-size: 10pt;
+    }
+    h2 {
+        word-wrap: break-word;
+        word-break: break-word;
     }
 }
