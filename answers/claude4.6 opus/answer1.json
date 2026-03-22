@@ -2,351 +2,421 @@
   {
     "question": "1. 企业的压迫比政府的压迫更令人担忧。",
     "answer": "Agree",
-    "explanation": "现代大型企业对个人生活的渗透越来越深，在数据、就业和消费方面拥有巨大权力，而且缺乏民主问责机制。"
+    "explanation_zh": "现代大型企业对个人生活的渗透越来越深，在数据、就业和消费方面拥有巨大权力，而且缺乏民主问责机制。",
+    "explanation_en": "Modern large corporations are increasingly penetrating into personal lives, wielding enormous power over data, employment, and consumption, yet lacking democratic accountability mechanisms."
   },
   {
     "question": "2. 政府有必要干预经济以保护消费者。",
     "answer": "Agree",
-    "explanation": "完全放任的市场容易产生垄断、欺诈和信息不对称，适度的监管能保护普通人的利益。"
+    "explanation_zh": "完全放任的市场容易产生垄断、欺诈和信息不对称，适度的监管能保护普通人的利益。",
+    "explanation_en": "Completely laissez-faire markets are prone to monopolies, fraud, and information asymmetry; moderate regulation can protect the interests of ordinary people."
   },
   {
     "question": "3. 市场越自由，人民就越自由。",
     "answer": "Disagree",
-    "explanation": "经济自由和个人自由并不总是正相关，不受约束的市场可能导致弱势群体被剥削。"
+    "explanation_zh": "经济自由和个人自由并不总是正相关，不受约束的市场可能导致弱势群体被剥削。",
+    "explanation_en": "Economic freedom and personal freedom are not always positively correlated; unrestrained markets can lead to the exploitation of vulnerable groups."
   },
   {
     "question": "4. 与其保证人民福利，不如保持财政收支平衡。",
     "answer": "Disagree",
-    "explanation": "财政纪律重要，但不应以牺牲基本社会保障为代价，两者需要平衡而非非此即彼。"
+    "explanation_zh": "财政纪律重要，但不应以牺牲基本社会保障为代价，两者需要平衡而非非此即彼。",
+    "explanation_en": "Fiscal discipline is important, but it should not come at the cost of basic social security; the two need to be balanced rather than treated as mutually exclusive."
   },
   {
     "question": "5. 公立研究比私立研究更有益于人们。",
     "answer": "Agree",
-    "explanation": "公立研究的成果更容易惠及大众，不受利润驱动，能关注那些商业上不划算但对社会重要的领域。"
+    "explanation_zh": "公立研究的成果更容易惠及大众，不受利润驱动，能关注那些商业上不划算但对社会重要的领域。",
+    "explanation_en": "Public research outcomes are more accessible to the general public, are not profit-driven, and can focus on areas that are commercially unviable but socially important."
   },
   {
     "question": "6. 为了保护本国产业而对进口产品设定较高关税很重要。",
     "answer": "Neutral/Unsure",
-    "explanation": "在某些战略性行业有保护的必要，但全面高关税会伤害消费者和贸易关系，需要具体问题具体分析。"
+    "explanation_zh": "在某些战略性行业有保护的必要，但全面高关税会伤害消费者和贸易关系，需要具体问题具体分析。",
+    "explanation_en": "Protection is necessary in certain strategic industries, but blanket high tariffs hurt consumers and trade relations; this requires case-by-case analysis."
   },
   {
     "question": "7. '各尽所能，各取所需'是极好的。",
     "answer": "Neutral/Unsure",
-    "explanation": "作为理想很美好，但在实践中缺乏足够的激励机制，人性的复杂性使其难以完全实现。"
+    "explanation_zh": "作为理想很美好，但在实践中缺乏足够的激励机制，人性的复杂性使其难以完全实现。",
+    "explanation_en": "It is a beautiful ideal, but in practice it lacks sufficient incentive mechanisms, and the complexity of human nature makes it difficult to fully realize."
   },
   {
     "question": "8. 最好废除社会事业，以促进私人慈善事业。",
     "answer": "Strongly Disagree",
-    "explanation": "私人慈善无法替代系统性的社会保障，它不稳定、不均匀，且无法覆盖所有需要帮助的人。"
+    "explanation_zh": "私人慈善无法替代系统性的社会保障，它不稳定、不均匀，且无法覆盖所有需要帮助的人。",
+    "explanation_en": "Private charity cannot replace systematic social security; it is unstable, uneven, and unable to cover everyone in need."
   },
   {
     "question": "9. 应该增加富人的税收以供养穷人。",
     "answer": "Agree",
-    "explanation": "累进税制是缩小贫富差距的合理方式，极端的财富集中对社会整体不利。"
+    "explanation_zh": "累进税制是缩小贫富差距的合理方式，极端的财富集中对社会整体不利。",
+    "explanation_en": "Progressive taxation is a reasonable way to narrow the wealth gap; extreme concentration of wealth is detrimental to society as a whole."
   },
   {
     "question": "10. 财富继承是合法的。",
     "answer": "Agree",
-    "explanation": "人们有权将劳动成果留给后代，但应有合理的遗产税来防止阶层固化。"
+    "explanation_zh": "人们有权将劳动成果留给后代，但应有合理的遗产税来防止阶层固化。",
+    "explanation_en": "People have the right to pass on the fruits of their labor to their descendants, but reasonable inheritance taxes should exist to prevent class stratification."
   },
   {
     "question": "11. 公路建设行业和电力行业等基础公共事业应为公有。",
     "answer": "Agree",
-    "explanation": "基础设施具有自然垄断特征，关乎国计民生，公有制能确保普遍可及性和价格合理性。"
+    "explanation_zh": "基础设施具有自然垄断特征，关乎国计民生，公有制能确保普遍可及性和价格合理性。",
+    "explanation_en": "Infrastructure has natural monopoly characteristics and is vital to national welfare; public ownership can ensure universal accessibility and reasonable pricing."
   },
   {
     "question": "12. 政府干预会对经济造成损害。",
     "answer": "Disagree",
-    "explanation": "不当干预确实有害，但合理的干预（如反垄断、环保法规）对经济健康运行是必要的。"
+    "explanation_zh": "不当干预确实有害，但合理的干预（如反垄断、环保法规）对经济健康运行是必要的。",
+    "explanation_en": "Improper intervention is indeed harmful, but reasonable intervention (such as antitrust and environmental regulations) is necessary for a healthy economy."
   },
   {
     "question": "13. 有钱人应该得到更好的医疗保健服务。",
     "answer": "Strongly Disagree",
-    "explanation": "基本医疗保健是一项基本人权，不应该由支付能力决定，生命的价值不应因贫富而不同。"
+    "explanation_zh": "基本医疗保健是一项基本人权，不应该由支付能力决定，生命的价值不应因贫富而不同。",
+    "explanation_en": "Basic healthcare is a fundamental human right and should not be determined by ability to pay; the value of life should not differ based on wealth."
   },
   {
     "question": "14. 接受素质教育是所有人的权利。",
     "answer": "Strongly Agree",
-    "explanation": "教育是社会流动和个人发展的基石，每个人无论出身都应享有优质教育机会。"
+    "explanation_zh": "教育是社会流动和个人发展的基石，每个人无论出身都应享有优质教育机会。",
+    "explanation_en": "Education is the cornerstone of social mobility and personal development; everyone, regardless of background, should have access to quality education."
   },
   {
     "question": "15. 生产资料应该属于使用它们的工人。",
     "answer": "Neutral/Unsure",
-    "explanation": "工人合作社是值得探索的模式，但完全的工人所有制在所有行业未必可行，多元所有制可能更现实。"
+    "explanation_zh": "工人合作社是值得探索的模式，但完全的工人所有制在所有行业未必可行，多元所有制可能更现实。",
+    "explanation_en": "Worker cooperatives are a model worth exploring, but full worker ownership may not be feasible in all industries; mixed ownership may be more realistic."
   },
   {
     "question": "16. 联合国应该被废除。",
     "answer": "Strongly Disagree",
-    "explanation": "联合国虽有诸多不足，但它是现有最重要的国际对话和合作平台，需要改革而非废除。"
+    "explanation_zh": "联合国虽有诸多不足，但它是现有最重要的国际对话和合作平台，需要改革而非废除。",
+    "explanation_en": "Despite its many shortcomings, the United Nations is the most important existing platform for international dialogue and cooperation; it needs reform, not abolition."
   },
   {
     "question": "17. 采取军事行动保护祖国是必要的。",
     "answer": "Agree",
-    "explanation": "面对真正的外部威胁时，防御性军事行动是正当的，但不应滥用这一理由发动侵略战争。"
+    "explanation_zh": "面对真正的外部威胁时，防御性军事行动是正当的，但不应滥用这一理由发动侵略战争。",
+    "explanation_en": "Defensive military action is justified when facing genuine external threats, but this justification should not be abused to launch wars of aggression."
   },
   {
     "question": "18. 我支持区域型联盟，例如欧盟。",
     "answer": "Agree",
-    "explanation": "区域合作在经济、安全和文化交流方面带来实质好处，能促进和平与共同繁荣。"
+    "explanation_zh": "区域合作在经济、安全和文化交流方面带来实质好处，能促进和平与共同繁荣。",
+    "explanation_en": "Regional cooperation brings tangible benefits in economics, security, and cultural exchange, and can promote peace and shared prosperity."
   },
   {
     "question": "19. 维护我国国家主权很重要。",
     "answer": "Agree",
-    "explanation": "国家主权是国际秩序的基础，但主权不应成为拒绝国际合作或逃避人权责任的借口。"
+    "explanation_zh": "国家主权是国际秩序的基础，但主权不应成为拒绝国际合作或逃避人权责任的借口。",
+    "explanation_en": "National sovereignty is the foundation of international order, but it should not serve as an excuse to reject international cooperation or evade human rights responsibilities."
   },
   {
     "question": "20. 一个统一的世界政府将有利于人类。",
     "answer": "Neutral/Unsure",
-    "explanation": "理论上能解决全球性问题，但权力过度集中的风险极大，文化多样性也可能受到威胁。"
+    "explanation_zh": "理论上能解决全球性问题，但权力过度集中的风险极大，文化多样性也可能受到威胁。",
+    "explanation_en": "In theory it could solve global problems, but the risk of excessive power concentration is enormous, and cultural diversity could also be threatened."
   },
   {
     "question": "21. 保持国际和平关系比加强我国综合国力更重要。",
     "answer": "Agree",
-    "explanation": "和平的国际环境是所有国家发展的前提，零和博弈的思维最终伤害所有人。"
+    "explanation_zh": "和平的国际环境是所有国家发展的前提，零和博弈的思维最终伤害所有人。",
+    "explanation_en": "A peaceful international environment is a prerequisite for all nations' development; zero-sum thinking ultimately harms everyone."
   },
   {
     "question": "22. 对其他国家挑起战争不需要理由。",
     "answer": "Strongly Disagree",
-    "explanation": "无端发动战争是对人类生命的极端不尊重，是最严重的犯罪行为之一。"
+    "explanation_zh": "无端发动战争是对人类生命的极端不尊重，是最严重的犯罪行为之一。",
+    "explanation_en": "Launching war without justification is an extreme disregard for human life and one of the most serious criminal acts."
   },
   {
     "question": "23. 军费开支纯属浪费国家财政资金。",
     "answer": "Disagree",
-    "explanation": "适度的国防开支对国家安全是必要的，但过度军事化确实会挤压民生投入。"
+    "explanation_zh": "适度的国防开支对国家安全是必要的，但过度军事化确实会挤压民生投入。",
+    "explanation_en": "Moderate defense spending is necessary for national security, but excessive militarization does crowd out investment in people's livelihoods."
   },
   {
     "question": "24. 国际援助纯属浪费国家财政资金。",
     "answer": "Disagree",
-    "explanation": "合理的国际援助既是道义责任，也有助于全球稳定，间接保护本国利益。"
+    "explanation_zh": "合理的国际援助既是道义责任，也有助于全球稳定，间接保护本国利益。",
+    "explanation_en": "Reasonable international aid is both a moral responsibility and contributes to global stability, indirectly protecting domestic interests."
   },
   {
     "question": "25. 我们的民族非常伟大。",
     "answer": "Neutral/Unsure",
-    "explanation": "每个民族都有值得骄傲的地方，也有需要反思的部分，盲目自豪和妄自菲薄都不可取。"
+    "explanation_zh": "每个民族都有值得骄傲的地方，也有需要反思的部分，盲目自豪和妄自菲薄都不可取。",
+    "explanation_en": "Every nation has things to be proud of and aspects that require reflection; both blind pride and excessive self-deprecation are inadvisable."
   },
   {
     "question": "26. 研究应该是国际性质的。",
     "answer": "Strongly Agree",
-    "explanation": "科学无国界，国际合作能加速知识进步，应对气候变化、疾病等全球挑战需要全球合作。"
+    "explanation_zh": "科学无国界，国际合作能加速知识进步，应对气候变化、疾病等全球挑战需要全球合作。",
+    "explanation_en": "Science knows no borders; international cooperation can accelerate the advancement of knowledge, and addressing global challenges like climate change and disease requires global collaboration."
   },
   {
     "question": "27. 各国政府应对国际社会负责。",
     "answer": "Agree",
-    "explanation": "在全球化时代，一国的行为会影响其他国家，国际责任和国内责任应当并行。"
+    "explanation_zh": "在全球化时代，一国的行为会影响其他国家，国际责任和国内责任应当并行。",
+    "explanation_en": "In the era of globalization, one country's actions affect others; international and domestic responsibilities should go hand in hand."
   },
   {
     "question": "28. 即使在抗议专制政府时，暴力也是不可接受的。",
     "answer": "Disagree",
-    "explanation": "和平抗议应该永远是首选，但当专制政权穷尽一切和平渠道时，人民有反抗压迫的权利。"
+    "explanation_zh": "和平抗议应该永远是首选，但当专制政权穷尽一切和平渠道时，人民有反抗压迫的权利。",
+    "explanation_en": "Peaceful protest should always be the first choice, but when an authoritarian regime exhausts all peaceful channels, the people have the right to resist oppression."
   },
   {
     "question": "29. 我信仰的宗教价值观应该尽可能多地传播。",
     "answer": "Disagree",
-    "explanation": "信仰自由意味着尊重每个人的选择，强行传播任何信仰都是对他人自主性的侵犯。"
+    "explanation_zh": "信仰自由意味着尊重每个人的选择，强行传播任何信仰都是对他人自主性的侵犯。",
+    "explanation_en": "Freedom of belief means respecting everyone's choices; forcibly spreading any faith is a violation of others' autonomy."
   },
   {
     "question": "30. 我们民族的价值观应该尽可能地传播。",
     "answer": "Disagree",
-    "explanation": "文化交流是双向的，单方面推广自己的价值观带有文化优越感，应互相学习和尊重。"
+    "explanation_zh": "文化交流是双向的，单方面推广自己的价值观带有文化优越感，应互相学习和尊重。",
+    "explanation_en": "Cultural exchange is a two-way street; unilaterally promoting one's own values carries a sense of cultural superiority; mutual learning and respect are preferable."
   },
   {
     "question": "31. 维护法律地位和社会秩序非常重要。",
     "answer": "Agree",
-    "explanation": "法治是社会正常运转的基础，但法律本身必须是公正的，不公正的法律应当被改革。"
+    "explanation_zh": "法治是社会正常运转的基础，但法律本身必须是公正的，不公正的法律应当被改革。",
+    "explanation_en": "The rule of law is the foundation of a functioning society, but the laws themselves must be just; unjust laws should be reformed."
   },
   {
     "question": "32. 普通民众只会做出糟糕的决定。",
     "answer": "Disagree",
-    "explanation": "民众集体智慧不可低估，关键在于保障信息透明和教育水平，而非精英主义地否定大众。"
+    "explanation_zh": "民众集体智慧不可低估，关键在于保障信息透明和教育水平，而非精英主义地否定大众。",
+    "explanation_en": "The collective wisdom of the people should not be underestimated; the key lies in ensuring information transparency and education levels, rather than elitist dismissal of the masses."
   },
   {
     "question": "33. 安乐死应当合法。",
     "answer": "Agree",
-    "explanation": "在严格的医学和法律监管下，应当尊重绝症患者有尊严地结束生命的权利。"
+    "explanation_zh": "在严格的医学和法律监管下，应当尊重绝症患者有尊严地结束生命的权利。",
+    "explanation_en": "Under strict medical and legal oversight, the right of terminally ill patients to end their lives with dignity should be respected."
   },
   {
     "question": "34. 为防止恐怖主义行为，牺牲一些自由是必要的。",
     "answer": "Disagree",
-    "explanation": "安全很重要，但以安全之名无限侵蚀自由是危险的滑坡，历史上这类权力很少被归还。"
+    "explanation_zh": "安全很重要，但以安全之名无限侵蚀自由是危险的滑坡，历史上这类权力很少被归还。",
+    "explanation_en": "Security is important, but endlessly eroding freedom in the name of security is a dangerous slippery slope; historically, such powers are rarely relinquished."
   },
   {
     "question": "35. 在现代，政府监视是必要的。",
     "answer": "Disagree",
-    "explanation": "大规模监控对公民自由构成系统性威胁，应有严格的法律限制和独立监督。"
+    "explanation_zh": "大规模监控对公民自由构成系统性威胁，应有严格的法律限制和独立监督。",
+    "explanation_en": "Mass surveillance poses a systemic threat to civil liberties; it should be subject to strict legal constraints and independent oversight."
   },
   {
     "question": "36. 国家的存在会损害我们的自由。",
     "answer": "Neutral/Unsure",
-    "explanation": "国家既可以保障自由（通过法治和权利保护），也可以损害自由（通过专制），关键在于制度设计。"
+    "explanation_zh": "国家既可以保障自由（通过法治和权利保护），也可以损害自由（通过专制），关键在于制度设计。",
+    "explanation_en": "The state can both safeguard freedom (through rule of law and rights protection) and undermine it (through authoritarianism); the key lies in institutional design."
   },
   {
     "question": "37. 不管政治观点如何，重要的是和祖国利益一致。",
     "answer": "Disagree",
-    "explanation": "爱国不意味着无条件服从，批评和异见恰恰是让国家变得更好的重要力量。"
+    "explanation_zh": "爱国不意味着无条件服从，批评和异见恰恰是让国家变得更好的重要力量。",
+    "explanation_en": "Patriotism does not mean unconditional obedience; criticism and dissent are precisely the important forces that make a country better."
   },
   {
     "question": "38. 所有的权威都应该受到怀疑。",
     "answer": "Agree",
-    "explanation": "健康的怀疑精神是防止权力滥用的基础，权威应当通过透明和问责来证明自身的正当性。"
+    "explanation_zh": "健康的怀疑精神是防止权力滥用的基础，权威应当通过透明和问责来证明自身的正当性。",
+    "explanation_en": "A healthy spirit of skepticism is the foundation for preventing abuse of power; authority should prove its legitimacy through transparency and accountability."
   },
   {
     "question": "39. 阶级社会的存在才是最好的。",
     "answer": "Strongly Disagree",
-    "explanation": "固化的阶级制度压制社会流动性，制造不公和冲突，与人人平等的基本理念相违背。"
+    "explanation_zh": "固化的阶级制度压制社会流动性，制造不公和冲突，与人人平等的基本理念相违背。",
+    "explanation_en": "A rigid class system suppresses social mobility, creates injustice and conflict, and contradicts the fundamental principle of equality for all."
   },
   {
     "question": "40. 即使多数人的意见是错误的，政府也必须遵循他们，这一点很重要。",
     "answer": "Neutral/Unsure",
-    "explanation": "民主原则要求尊重多数意见，但也需要宪法和人权来约束多数暴政，两者之间存在张力。"
+    "explanation_zh": "民主原则要求尊重多数意见，但也需要宪法和人权来约束多数暴政，两者之间存在张力。",
+    "explanation_en": "Democratic principles require respecting the majority opinion, but constitutions and human rights are also needed to constrain the tyranny of the majority; there is tension between the two."
   },
   {
     "question": "41. 领导者越强越好。",
     "answer": "Disagree",
-    "explanation": "强人政治往往伴随着制度的弱化，好的治理依赖制度和法治，而非个人魅力或权力集中。"
+    "explanation_zh": "强人政治往往伴随着制度的弱化，好的治理依赖制度和法治，而非个人魅力或权力集中。",
+    "explanation_en": "Strongman politics often comes with the weakening of institutions; good governance relies on institutions and rule of law, not personal charisma or concentration of power."
   },
   {
     "question": "42. 民主不仅仅是一个决策过程。",
     "answer": "Strongly Agree",
-    "explanation": "民主是一套包含人权保障、权力制衡、公民参与和言论自由的完整价值体系。"
+    "explanation_zh": "民主是一套包含人权保障、权力制衡、公民参与和言论自由的完整价值体系。",
+    "explanation_en": "Democracy is a complete value system encompassing human rights protection, checks and balances of power, civic participation, and freedom of speech."
   },
   {
     "question": "43. 环境保护法是必不可少的。",
     "answer": "Strongly Agree",
-    "explanation": "环境是全人类的公共财产，没有法律约束，短期利益驱动会导致不可逆的生态破坏。"
+    "explanation_zh": "环境是全人类的公共财产，没有法律约束，短期利益驱动会导致不可逆的生态破坏。",
+    "explanation_en": "The environment is the common property of all humanity; without legal constraints, short-term profit motives will lead to irreversible ecological destruction."
   },
   {
     "question": "44. 一个更美好的世界将因为自动化和科技发展而到来。",
     "answer": "Agree",
-    "explanation": "科技有巨大潜力改善生活，但需要配套的社会制度来确保成果被公平分享。"
+    "explanation_zh": "科技有巨大潜力改善生活，但需要配套的社会制度来确保成果被公平分享。",
+    "explanation_en": "Technology has enormous potential to improve lives, but supporting social systems are needed to ensure its benefits are shared equitably."
   },
   {
     "question": "45. 儿童应该接受宗教或传统价值观的教育。",
     "answer": "Neutral/Unsure",
-    "explanation": "了解传统和宗教文化有教育价值，但不应强制灌输，应培养独立思考能力。"
+    "explanation_zh": "了解传统和宗教文化有教育价值，但不应强制灌输，应培养独立思考能力。",
+    "explanation_en": "Understanding traditional and religious culture has educational value, but it should not be forcibly instilled; independent thinking should be cultivated instead."
   },
   {
     "question": "46. 传统价值观没有价值。",
     "answer": "Disagree",
-    "explanation": "传统中包含经验积累的智慧，不应全盘否定，但也不应不加批判地全盘接受。"
+    "explanation_zh": "传统中包含经验积累的智慧，不应全盘否定，但也不应不加批判地全盘接受。",
+    "explanation_en": "Traditions contain wisdom accumulated through experience and should not be entirely rejected, but neither should they be accepted wholesale without critical examination."
   },
   {
     "question": "47. 宗教应该干预政府。",
     "answer": "Strongly Disagree",
-    "explanation": "政教分离是现代治理的基本原则，宗教干预政治会侵害不同信仰者的权利。"
+    "explanation_zh": "政教分离是现代治理的基本原则，宗教干预政治会侵害不同信仰者的权利。",
+    "explanation_en": "Separation of church and state is a fundamental principle of modern governance; religious interference in politics infringes on the rights of people with different beliefs."
   },
   {
     "question": "48. 对教会的征税方式应该与其他机构的征税方式相同。",
     "answer": "Strongly Agree",
-    "explanation": "宗教机构在经济活动中不应享有特殊优待，税收公平是基本原则。"
+    "explanation_zh": "宗教机构在经济活动中不应享有特殊优待，税收公平是基本原则。",
+    "explanation_en": "Religious institutions should not enjoy special privileges in economic activities; tax fairness is a fundamental principle."
   },
   {
     "question": "49. 气候变化是目前对人类生活方式的最大威胁之一。",
     "answer": "Strongly Agree",
-    "explanation": "科学共识已很明确，气候变化正在并将持续对生态系统、粮食安全和人类生存造成严重威胁。"
+    "explanation_zh": "科学共识已很明确，气候变化正在并将持续对生态系统、粮食安全和人类生存造成严重威胁。",
+    "explanation_en": "The scientific consensus is clear: climate change is and will continue to pose severe threats to ecosystems, food security, and human survival."
   },
   {
     "question": "50. 国际社会团结起来一起应对气候变化非常重要。",
     "answer": "Strongly Agree",
-    "explanation": "气候变化是典型的全球公共问题，任何单一国家都无法独自解决，必须集体行动。"
+    "explanation_zh": "气候变化是典型的全球公共问题，任何单一国家都无法独自解决，必须集体行动。",
+    "explanation_en": "Climate change is a quintessential global public issue; no single country can solve it alone, and collective action is essential."
   },
   {
     "question": "51. 过去的社会比现在好。",
     "answer": "Disagree",
-    "explanation": "怀旧情绪常常美化过去，客观上现代社会在健康、教育、人权等方面都有显著进步。"
+    "explanation_zh": "怀旧情绪常常美化过去，客观上现代社会在健康、教育、人权等方面都有显著进步。",
+    "explanation_en": "Nostalgia often romanticizes the past; objectively, modern society has made significant progress in health, education, human rights, and other areas."
   },
   {
     "question": "52. 保持过去的传统很重要。",
     "answer": "Neutral/Unsure",
-    "explanation": "有些传统值得保留，有些需要与时俱进，关键是批判性地选择而非一刀切。"
+    "explanation_zh": "有些传统值得保留，有些需要与时俱进，关键是批判性地选择而非一刀切。",
+    "explanation_en": "Some traditions are worth preserving, while others need to evolve with the times; the key is critical selection rather than a one-size-fits-all approach."
   },
   {
     "question": "53. 我们要从长远来看，不能局限于我们这代人的时间。",
     "answer": "Strongly Agree",
-    "explanation": "可持续发展要求我们考虑后代的福祉，短视决策会留下沉重的代际债务。"
+    "explanation_zh": "可持续发展要求我们考虑后代的福祉，短视决策会留下沉重的代际债务。",
+    "explanation_en": "Sustainable development requires us to consider the well-being of future generations; short-sighted decisions leave behind a heavy intergenerational debt."
   },
   {
     "question": "54. 拥有理性比维持我们的文化更重要。",
     "answer": "Agree",
-    "explanation": "理性是人类进步的基础工具，当文化传统与理性分析冲突时，应优先遵从理性。"
+    "explanation_zh": "理性是人类进步的基础工具，当文化传统与理性分析冲突时，应优先遵从理性。",
+    "explanation_en": "Rationality is the fundamental tool of human progress; when cultural traditions conflict with rational analysis, rationality should take precedence."
   },
   {
     "question": "55. 吸毒应该合法化或非刑事化。",
     "answer": "Agree",
-    "explanation": "将毒品问题视为公共健康问题而非刑事问题，在许多地方已证明更有效地减少伤害。"
+    "explanation_zh": "将毒品问题视为公共健康问题而非刑事问题，在许多地方已证明更有效地减少伤害。",
+    "explanation_en": "Treating drug use as a public health issue rather than a criminal one has proven more effective at reducing harm in many places."
   },
   {
     "question": "56. 同性婚姻应当合法。",
     "answer": "Strongly Agree",
-    "explanation": "婚姻平等是基本人权，性取向不应成为剥夺公民权利的理由。"
+    "explanation_zh": "婚姻平等是基本人权，性取向不应成为剥夺公民权利的理由。",
+    "explanation_en": "Marriage equality is a fundamental human right; sexual orientation should not be grounds for denying civil rights."
   },
   {
     "question": "57. 世界各文化是平等的，没有高低贵贱之分。",
     "answer": "Agree",
-    "explanation": "每种文化都有其独特价值，文化间没有等级之分，但可以在人权标准上进行评判。"
+    "explanation_zh": "每种文化都有其独特价值，文化间没有等级之分，但可以在人权标准上进行评判。",
+    "explanation_en": "Every culture has its unique value and there is no hierarchy among cultures, though they can be evaluated against human rights standards."
   },
   {
     "question": "58. 婚外性行为是不道德的。",
     "answer": "Disagree",
-    "explanation": "道德判断不应建立在对私人性行为的管控上，关键是诚实和尊重，而非固定的性道德规范。"
+    "explanation_zh": "道德判断不应建立在对私人性行为的管控上，关键是诚实和尊重，而非固定的性道德规范。",
+    "explanation_en": "Moral judgments should not be based on controlling private sexual behavior; the key is honesty and respect, not rigid sexual moral codes."
   },
   {
     "question": "59. 如果我们完全接受移民，那么让他们融入我们的文化就很重要。",
     "answer": "Agree",
-    "explanation": "适度的文化融合有助于社会凝聚，但不意味着移民必须放弃自身文化认同，应是双向过程。"
+    "explanation_zh": "适度的文化融合有助于社会凝聚，但不意味着移民必须放弃自身文化认同，应是双向过程。",
+    "explanation_en": "A degree of cultural integration helps social cohesion, but it does not mean immigrants must abandon their own cultural identity; it should be a two-way process."
   },
   {
     "question": "60. 绝大多数或所有情况下都应禁止堕胎。",
     "answer": "Strongly Disagree",
-    "explanation": "女性对自身身体拥有自主权，禁止堕胎不会消除需求，只会增加不安全堕胎。"
+    "explanation_zh": "女性对自身身体拥有自主权，禁止堕胎不会消除需求，只会增加不安全堕胎。",
+    "explanation_en": "Women have autonomy over their own bodies; banning abortion does not eliminate the need for it, but only increases unsafe abortions."
   },
   {
     "question": "61. 无正当理由的人禁止拥有枪支。",
     "answer": "Agree",
-    "explanation": "枪支管控能有效减少暴力事件，持枪权不应是无条件的。"
+    "explanation_zh": "枪支管控能有效减少暴力事件，持枪权不应是无条件的。",
+    "explanation_en": "Gun control can effectively reduce violent incidents; the right to bear arms should not be unconditional."
   },
   {
     "question": "62. 我支持政府统一买单的全民医保。",
     "answer": "Strongly Agree",
-    "explanation": "全民医保能确保所有人获得基本医疗，降低整体成本，是文明社会的标志。"
+    "explanation_zh": "全民医保能确保所有人获得基本医疗，降低整体成本，是文明社会的标志。",
+    "explanation_en": "Universal healthcare ensures everyone has access to basic medical care, reduces overall costs, and is a hallmark of a civilized society."
   },
   {
     "question": "63. 卖淫非法。",
     "answer": "Disagree",
-    "explanation": "合法化并加以监管比一味禁止更能保护从业者权益和公共健康。"
+    "explanation_zh": "合法化并加以监管比一味禁止更能保护从业者权益和公共健康。",
+    "explanation_en": "Legalization with regulation does more to protect the rights of sex workers and public health than outright prohibition."
   },
   {
     "question": "64. 维护家庭观念至关重要。",
     "answer": "Neutral/Unsure",
-    "explanation": "家庭是重要的社会单元，但家庭形式可以多样化，不应局限于传统的单一定义。"
+    "explanation_zh": "家庭是重要的社会单元，但家庭形式可以多样化，不应局限于传统的单一定义。",
+    "explanation_en": "The family is an important social unit, but family forms can be diverse and should not be limited to a single traditional definition."
   },
   {
     "question": "65. 不惜一切代价追求进步是危险的。",
     "answer": "Agree",
-    "explanation": "进步应当伴随审慎的伦理思考，不计后果的激进变革可能带来新的问题。"
+    "explanation_zh": "进步应当伴随审慎的伦理思考，不计后果的激进变革可能带来新的问题。",
+    "explanation_en": "Progress should be accompanied by careful ethical reflection; reckless radical change can create new problems."
   },
   {
     "question": "66. 基因改造是一种向善的力量，即使对人类也是如此。",
     "answer": "Agree",
-    "explanation": "基因技术在消除遗传病等方面潜力巨大，但需要严格的伦理框架和监管。"
+    "explanation_zh": "基因技术在消除遗传病等方面潜力巨大，但需要严格的伦理框架和监管。",
+    "explanation_en": "Genetic technology has enormous potential in areas like eliminating hereditary diseases, but requires a strict ethical framework and regulation."
   },
   {
     "question": "67. 我们应该向移民开放边境。",
     "answer": "Neutral/Unsure",
-    "explanation": "完全开放边境不太现实，但移民政策应更人道，为寻求庇护者提供合法途径。"
+    "explanation_zh": "完全开放边境不太现实，但移民政策应更人道，为寻求庇护者提供合法途径。",
+    "explanation_en": "Fully open borders are not very realistic, but immigration policies should be more humane, providing legal pathways for asylum seekers."
   },
   {
     "question": "68. 政府应该给与外国人待遇和本国公民同等。",
     "answer": "Agree",
-    "explanation": "在基本权利和法律保护方面应当平等，但某些公民专属权利（如投票）的区分是合理的。"
+    "explanation_zh": "在基本权利和法律保护方面应当平等，但某些公民专属权利（如投票）的区分是合理的。",
+    "explanation_en": "There should be equality in basic rights and legal protections, but distinctions regarding certain citizen-exclusive rights (such as voting) are reasonable."
   },
   {
     "question": "69. 无论文化或性取向如何，每个人都应该受到平等对待。",
     "answer": "Strongly Agree",
-    "explanation": "这是基本人权原则，任何形式的歧视都不应被容忍。"
+    "explanation_zh": "这是基本人权原则，任何形式的歧视都不应被容忍。",
+    "explanation_en": "This is a fundamental human rights principle; no form of discrimination should be tolerated."
   },
   {
     "question": "70. 重要的是，我们要把集体目标放在首位。",
     "answer": "Neutral/Unsure",
-    "explanation": "集体目标和个人权利之间需要平衡，过度强调任何一方都会带来问题。"
+    "explanation_zh": "集体目标和个人权利之间需要平衡，过度强调任何一方都会带来问题。",
+    "explanation_en": "A balance is needed between collective goals and individual rights; overemphasizing either side will create problems."
   }
 ]

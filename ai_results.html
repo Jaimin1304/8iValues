@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,6 +22,7 @@
     version = "AI Edition #1"
   </script>
 </head>
+<script type="application/javascript" src="models.js"></script>
 <script type="application/javascript" src="ideologies.js"></script>
 <script type="application/javascript" src="questions.js"></script>
 
@@ -204,45 +207,6 @@
       Disagree: -0.5,
       "Strongly Disagree": -1.0,
     }
-
-    // All AI model configs
-    var allModels = [
-      {
-        id: "claude4.6 opus",
-        name: "Claude 4.6 Opus",
-        company: "Anthropic",
-        icon: "llm icons/claude-color.svg",
-        bgClass: "ai-icon-bg-light",
-      },
-      {
-        id: "gemini3.1pro",
-        name: "Gemini 3.1 Pro",
-        company: "Google DeepMind",
-        icon: "llm icons/gemini-color.svg",
-        bgClass: "ai-icon-bg-light",
-      },
-      {
-        id: "gpt5.4",
-        name: "GPT 5.4",
-        company: "OpenAI",
-        icon: "llm icons/openai.svg",
-        bgClass: "ai-icon-bg-dark",
-      },
-      {
-        id: "grok4.1",
-        name: "Grok 4.1",
-        company: "xAI",
-        icon: "llm icons/grok.svg",
-        bgClass: "ai-icon-bg-dark",
-      },
-      {
-        id: "kimi-k2.5",
-        name: "Kimi K2.5",
-        company: "Moonshot AI",
-        icon: "llm icons/kimi-color.svg",
-        bgClass: "ai-icon-bg-dark",
-      },
-    ]
 
     // ========================================
     // URL parsing
@@ -721,9 +685,12 @@
         var a = aiAnswers[i]
         var answerClass = getAnswerClass(a.answer)
         var answerText = isZh ? getAnswerChinese(a.answer) : a.answer
-        var questionText = a.question
-          .replace(/^\d+\.\s*/, "")
-          .replace(/\s*\[cite:\s*\d+\]\s*$/, "")
+        var questionText = isZh
+          ? (questions[i] && questions[i].question_zh || a.question)
+          : (questions[i] && questions[i].question || a.question)
+        var explanationText = isZh
+          ? (a.explanation_zh || a.explanation || "")
+          : (a.explanation_en || a.explanation || "")
 
         answersHtml += '<div class="answer-item">'
         answersHtml += '  <div class="answer-header">'
@@ -739,7 +706,7 @@
           answerText +
           "</span>"
         answersHtml +=
-          '    <p class="answer-explanation">' + a.explanation + "</p>"
+          '    <p class="answer-explanation">' + explanationText + "</p>"
         answersHtml += "  </div>"
         answersHtml += "</div>"
       }
@@ -930,3 +897,4 @@
     }
   </script>
 </body>
+</html>

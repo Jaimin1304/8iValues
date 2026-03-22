@@ -2,351 +2,421 @@
   {
     "question": "Oppression by corporations is more of a concern than oppression by governments.",
     "answer": "Disagree",
-    "explanation": "Governments hold monopoly on law and force, making their potential for oppression far greater in my view."
+    "explanation_en": "Governments hold monopoly on law and force, making their potential for oppression far greater in my view.",
+    "explanation_zh": "政府垄断了法律和强制力，在我看来，其压迫的潜力远大于企业。"
   },
   {
     "question": "It is necessary for the government to intervene in the economy to protect consumers.",
     "answer": "Disagree",
-    "explanation": "Competition and informed choice protect consumers better than heavy-handed rules that often backfire."
+    "explanation_en": "Competition and informed choice protect consumers better than heavy-handed rules that often backfire.",
+    "explanation_zh": "竞争和知情选择比那些往往适得其反的严厉监管更能保护消费者。"
   },
   {
     "question": "The freer the market, the freer the people.",
     "answer": "Strongly Agree",
-    "explanation": "Economic freedom lets people pursue their own goals without state control dictating their lives."
+    "explanation_en": "Economic freedom lets people pursue their own goals without state control dictating their lives.",
+    "explanation_zh": "经济自由让人们能够追求自己的目标，而不受国家控制对生活的支配。"
   },
   {
     "question": "It is better to maintain a balanced budget than to guarantee welfare for the people.",
     "answer": "Agree",
-    "explanation": "Long-term fiscal responsibility prevents debt that hurts future generations more than short-term handouts."
+    "explanation_en": "Long-term fiscal responsibility prevents debt that hurts future generations more than short-term handouts.",
+    "explanation_zh": "长期的财政责任能避免债务累积，这比短期的福利发放对后代的伤害更小。"
   },
   {
     "question": "Public research is more beneficial to people than private research.",
     "answer": "Disagree",
-    "explanation": "Private research driven by competition delivers faster innovation that actually reaches everyday people."
+    "explanation_en": "Private research driven by competition delivers faster innovation that actually reaches everyday people.",
+    "explanation_zh": "由竞争驱动的私营研究能更快地实现创新，并真正惠及普通民众。"
   },
   {
     "question": "It is important to set high tariffs on imported goods to protect domestic industries.",
     "answer": "Disagree",
-    "explanation": "Tariffs raise prices for everyone and slow overall progress; free trade benefits consumers more."
+    "explanation_en": "Tariffs raise prices for everyone and slow overall progress; free trade benefits consumers more.",
+    "explanation_zh": "关税抬高了所有人的物价并拖慢整体发展；自由贸易更有利于消费者。"
   },
   {
     "question": "'From each according to his ability, to each according to his needs' is excellent.",
     "answer": "Strongly Disagree",
-    "explanation": "It ignores real human incentives and has historically led to poverty and authoritarian control."
+    "explanation_en": "It ignores real human incentives and has historically led to poverty and authoritarian control.",
+    "explanation_zh": "它忽视了人类真实的激励机制，历史上导致了贫困和专制统治。"
   },
   {
     "question": "It is better to abolish social welfare to promote private charity.",
     "answer": "Disagree",
-    "explanation": "A basic safety net is practical; private charity alone often fails to reach those who need it most."
+    "explanation_en": "A basic safety net is practical; private charity alone often fails to reach those who need it most.",
+    "explanation_zh": "基本的社会保障网是务实的；仅靠私人慈善往往无法覆盖最需要帮助的人。"
   },
   {
     "question": "Taxes on the rich should be increased to support the poor.",
     "answer": "Disagree",
-    "explanation": "Excessive taxes discourage investment and growth that ultimately lifts everyone, including the poor."
+    "explanation_en": "Excessive taxes discourage investment and growth that ultimately lifts everyone, including the poor.",
+    "explanation_zh": "过高的税收会抑制投资和经济增长，而增长最终会惠及包括穷人在内的所有人。"
   },
   {
     "question": "Inheritance of wealth is legitimate.",
     "answer": "Agree",
-    "explanation": "People should be free to pass on what they earned; it's part of personal property rights."
+    "explanation_en": "People should be free to pass on what they earned; it's part of personal property rights.",
+    "explanation_zh": "人们应当有权将自己挣得的财富传给后代；这是个人财产权的一部分。"
   },
   {
     "question": "Basic public utilities such as road construction and electricity industries should be publicly owned.",
     "answer": "Disagree",
-    "explanation": "Private operation with smart regulation usually delivers better service and lower costs."
+    "explanation_en": "Private operation with smart regulation usually delivers better service and lower costs.",
+    "explanation_zh": "在合理监管下的私营运营通常能提供更好的服务和更低的成本。"
   },
   {
     "question": "Government intervention harms the economy.",
     "answer": "Agree",
-    "explanation": "Too much meddling distorts prices and innovation; light rules work better for prosperity."
+    "explanation_en": "Too much meddling distorts prices and innovation; light rules work better for prosperity.",
+    "explanation_zh": "过度干预会扭曲价格和创新；轻度监管更有利于经济繁荣。"
   },
   {
     "question": "Rich people should get better healthcare services.",
     "answer": "Disagree",
-    "explanation": "Basic care should be accessible to all, but markets naturally allow premium options for those who can pay."
+    "explanation_en": "Basic care should be accessible to all, but markets naturally allow premium options for those who can pay.",
+    "explanation_zh": "基本医疗应对所有人开放，但市场自然会为有支付能力的人提供高端选项。"
   },
   {
     "question": "Receiving quality education is a right for everyone.",
     "answer": "Strongly Agree",
-    "explanation": "A well-educated population benefits the whole society and creates real opportunity."
+    "explanation_en": "A well-educated population benefits the whole society and creates real opportunity.",
+    "explanation_zh": "受过良好教育的人口有利于整个社会，并创造真正的机会。"
   },
   {
     "question": "The means of production should belong to the workers who use them.",
     "answer": "Strongly Disagree",
-    "explanation": "Private ownership and voluntary contracts create more wealth and freedom than forced worker control."
+    "explanation_en": "Private ownership and voluntary contracts create more wealth and freedom than forced worker control.",
+    "explanation_zh": "私有制和自愿签订的合同比强制的工人控制能创造更多财富和自由。"
   },
   {
     "question": "The United Nations should be abolished.",
     "answer": "Disagree",
-    "explanation": "It's imperfect but provides a useful forum for diplomacy and coordination between nations."
+    "explanation_en": "It's imperfect but provides a useful forum for diplomacy and coordination between nations.",
+    "explanation_zh": "联合国虽不完美，但为各国之间的外交和协调提供了有用的平台。"
   },
   {
     "question": "It is necessary to take military action to protect the motherland.",
     "answer": "Agree",
-    "explanation": "Strong defense is essential; no country can rely on hope alone for security."
+    "explanation_en": "Strong defense is essential; no country can rely on hope alone for security.",
+    "explanation_zh": "强大的国防至关重要；没有任何国家能仅靠希望来保障安全。"
   },
   {
     "question": "I support regional alliances, such as the EU.",
     "answer": "Agree",
-    "explanation": "Cooperation on trade and standards helps prosperity without erasing national identity."
+    "explanation_en": "Cooperation on trade and standards helps prosperity without erasing national identity.",
+    "explanation_zh": "在贸易和标准方面的合作有助于繁荣，同时不会抹去国家认同。"
   },
   {
     "question": "It is important to maintain our country's national sovereignty.",
     "answer": "Strongly Agree",
-    "explanation": "Sovereignty protects our ability to govern ourselves according to our own values."
+    "explanation_en": "Sovereignty protects our ability to govern ourselves according to our own values.",
+    "explanation_zh": "主权保障了我们按照自己的价值观进行自治的能力。"
   },
   {
     "question": "A unified world government would benefit humanity.",
     "answer": "Strongly Disagree",
-    "explanation": "Centralized global power would likely become distant, inefficient, and oppressive."
+    "explanation_en": "Centralized global power would likely become distant, inefficient, and oppressive.",
+    "explanation_zh": "集中化的全球权力很可能变得疏远、低效且具有压迫性。"
   },
   {
     "question": "Maintaining international peaceful relations is more important than strengthening our country's comprehensive national power.",
     "answer": "Neutral/Unsure",
-    "explanation": "Both matter; peace is ideal but strength ensures we aren't taken advantage of."
+    "explanation_en": "Both matter; peace is ideal but strength ensures we aren't taken advantage of.",
+    "explanation_zh": "两者都重要；和平是理想，但实力确保我们不会被占便宜。"
   },
   {
     "question": "No reason is needed to start a war with other countries.",
     "answer": "Strongly Disagree",
-    "explanation": "War should always require clear justification; aggression for its own sake is wrong."
+    "explanation_en": "War should always require clear justification; aggression for its own sake is wrong.",
+    "explanation_zh": "战争始终应有明确的正当理由；为侵略而侵略是错误的。"
   },
   {
     "question": "Military expenditure is purely a waste of national fiscal funds.",
     "answer": "Disagree",
-    "explanation": "A reasonable defense budget protects peace and deters threats."
+    "explanation_en": "A reasonable defense budget protects peace and deters threats.",
+    "explanation_zh": "合理的国防预算能维护和平并威慑威胁。"
   },
   {
     "question": "International aid is purely a waste of national fiscal funds.",
     "answer": "Disagree",
-    "explanation": "Targeted, effective aid can stabilize regions and create future trading partners."
+    "explanation_en": "Targeted, effective aid can stabilize regions and create future trading partners.",
+    "explanation_zh": "有针对性的有效援助可以稳定地区局势并培育未来的贸易伙伴。"
   },
   {
     "question": "Our nation is very great.",
     "answer": "Neutral/Unsure",
-    "explanation": "Every country has strengths and flaws; blind nationalism doesn't help us improve."
+    "explanation_en": "Every country has strengths and flaws; blind nationalism doesn't help us improve.",
+    "explanation_zh": "每个国家都有优势和不足；盲目的民族主义无助于我们进步。"
   },
   {
     "question": "Research should be international in nature.",
     "answer": "Strongly Agree",
-    "explanation": "Sharing knowledge across borders accelerates discoveries that benefit everyone."
+    "explanation_en": "Sharing knowledge across borders accelerates discoveries that benefit everyone.",
+    "explanation_zh": "跨国共享知识能加速造福所有人的科学发现。"
   },
   {
     "question": "Governments of all countries should be accountable to the international community.",
     "answer": "Agree",
-    "explanation": "Basic human rights standards should be upheld globally, though enforcement must be careful."
+    "explanation_en": "Basic human rights standards should be upheld globally, though enforcement must be careful.",
+    "explanation_zh": "基本人权标准应在全球范围内得到维护，但执行方式需要谨慎。"
   },
   {
     "question": "Even when protesting against authoritarian governments, violence is unacceptable.",
     "answer": "Agree",
-    "explanation": "Peaceful methods build legitimacy and avoid cycles of chaos."
+    "explanation_en": "Peaceful methods build legitimacy and avoid cycles of chaos.",
+    "explanation_zh": "和平方式能建立合法性，并避免陷入混乱的循环。"
   },
   {
     "question": "The religious values I believe in should be spread as much as possible.",
     "answer": "Disagree",
-    "explanation": "Faith is personal; forcing beliefs on others violates freedom of conscience."
+    "explanation_en": "Faith is personal; forcing beliefs on others violates freedom of conscience.",
+    "explanation_zh": "信仰是个人的事；将信仰强加于人侵犯了良心自由。"
   },
   {
     "question": "The values of our nation should be spread as much as possible.",
     "answer": "Disagree",
-    "explanation": "Lead by example through success; cultural imperialism creates resentment."
+    "explanation_en": "Lead by example through success; cultural imperialism creates resentment.",
+    "explanation_zh": "应以成功为榜样来引领；文化帝国主义只会招致反感。"
   },
   {
     "question": "Maintaining legal status and social order is very important.",
     "answer": "Strongly Agree",
-    "explanation": "Rule of law is the foundation that lets ordinary people live safely and plan ahead."
+    "explanation_en": "Rule of law is the foundation that lets ordinary people live safely and plan ahead.",
+    "explanation_zh": "法治是让普通人安全生活和规划未来的基石。"
   },
   {
     "question": "Ordinary people will only make bad decisions.",
     "answer": "Disagree",
-    "explanation": "With good information and freedom, most people make sensible choices for their lives."
+    "explanation_en": "With good information and freedom, most people make sensible choices for their lives.",
+    "explanation_zh": "在信息充分和自由的条件下，大多数人都能为自己的生活做出明智的选择。"
   },
   {
     "question": "Euthanasia should be legal.",
     "answer": "Agree",
-    "explanation": "Terminally ill adults deserve the dignity of choosing a peaceful end."
+    "explanation_en": "Terminally ill adults deserve the dignity of choosing a peaceful end.",
+    "explanation_zh": "身患绝症的成年人应有尊严地选择安详离世的权利。"
   },
   {
     "question": "It is necessary to sacrifice some freedoms to prevent terrorist acts.",
     "answer": "Disagree",
-    "explanation": "Targeted security works without broadly eroding privacy and rights."
+    "explanation_en": "Targeted security works without broadly eroding privacy and rights.",
+    "explanation_zh": "有针对性的安全措施无需大范围侵蚀隐私和权利即可发挥作用。"
   },
   {
     "question": "In modern times, government surveillance is necessary.",
     "answer": "Disagree",
-    "explanation": "Mass surveillance undermines trust and freedom far more than it prevents harm."
+    "explanation_en": "Mass surveillance undermines trust and freedom far more than it prevents harm.",
+    "explanation_zh": "大规模监控对信任和自由的损害远大于其预防危害的作用。"
   },
   {
     "question": "The existence of the state harms our freedom.",
     "answer": "Disagree",
-    "explanation": "A limited state protects rights and provides basic order that pure anarchy cannot."
+    "explanation_en": "A limited state protects rights and provides basic order that pure anarchy cannot.",
+    "explanation_zh": "有限政府能保护权利并提供纯粹无政府状态无法实现的基本秩序。"
   },
   {
     "question": "Regardless of political views, it is important to be consistent with the interests of the motherland.",
     "answer": "Disagree",
-    "explanation": "Blind loyalty can justify bad policies; honest critique serves the country better."
+    "explanation_en": "Blind loyalty can justify bad policies; honest critique serves the country better.",
+    "explanation_zh": "盲目忠诚可能为糟糕的政策辩护；诚实的批评对国家更有益。"
   },
   {
     "question": "All authority should be questioned.",
     "answer": "Agree",
-    "explanation": "Healthy skepticism keeps power in check and prevents abuse."
+    "explanation_en": "Healthy skepticism keeps power in check and prevents abuse.",
+    "explanation_zh": "健康的质疑精神能制约权力并防止滥权。"
   },
   {
     "question": "The existence of a class society is the best.",
     "answer": "Disagree",
-    "explanation": "Mobility and merit are better than rigid classes that lock people in place."
+    "explanation_en": "Mobility and merit are better than rigid classes that lock people in place.",
+    "explanation_zh": "社会流动性和才能至上优于将人们固定在原位的僵化阶级制度。"
   },
   {
     "question": "It is important that the government must follow the opinions of the majority even if they are wrong.",
     "answer": "Disagree",
-    "explanation": "Governments should protect rights even against popular but harmful ideas."
+    "explanation_en": "Governments should protect rights even against popular but harmful ideas.",
+    "explanation_zh": "政府应保护权利，即使面对受欢迎但有害的主张也不例外。"
   },
   {
     "question": "The stronger the leader, the better.",
     "answer": "Disagree",
-    "explanation": "Strong institutions and checks matter more than any single powerful person."
+    "explanation_en": "Strong institutions and checks matter more than any single powerful person.",
+    "explanation_zh": "强大的制度和制衡机制比任何一个强权人物都重要。"
   },
   {
     "question": "Democracy is not just a decision-making process.",
     "answer": "Agree",
-    "explanation": "It's also about protecting individual rights and rule of law."
+    "explanation_en": "It's also about protecting individual rights and rule of law.",
+    "explanation_zh": "它还关乎保护个人权利和法治。"
   },
   {
     "question": "Environmental protection laws are essential.",
     "answer": "Strongly Agree",
-    "explanation": "We need practical rules to preserve the planet for future generations."
+    "explanation_en": "We need practical rules to preserve the planet for future generations.",
+    "explanation_zh": "我们需要切实可行的法规来为子孙后代保护地球。"
   },
   {
     "question": "A better world will come because of automation and technological development.",
     "answer": "Strongly Agree",
-    "explanation": "Tech solves problems and raises living standards when people are free to innovate."
+    "explanation_en": "Tech solves problems and raises living standards when people are free to innovate.",
+    "explanation_zh": "当人们有创新的自由时，技术能解决问题并提高生活水平。"
   },
   {
     "question": "Children should receive education in religious or traditional values.",
     "answer": "Disagree",
-    "explanation": "Schools should teach critical thinking; values come from families."
+    "explanation_en": "Schools should teach critical thinking; values come from families.",
+    "explanation_zh": "学校应教授批判性思维；价值观应来自家庭。"
   },
   {
     "question": "Traditional values have no value.",
     "answer": "Disagree",
-    "explanation": "Some traditions offer wisdom, but they must evolve with new knowledge."
+    "explanation_en": "Some traditions offer wisdom, but they must evolve with new knowledge.",
+    "explanation_zh": "一些传统蕴含智慧，但它们必须随着新知识的发展而演进。"
   },
   {
     "question": "Religion should interfere in government.",
     "answer": "Strongly Disagree",
-    "explanation": "Separation keeps policy rational and prevents theocracy."
+    "explanation_en": "Separation keeps policy rational and prevents theocracy.",
+    "explanation_zh": "政教分离使政策保持理性，并防止神权统治。"
   },
   {
     "question": "Churches should be taxed in the same way as other institutions.",
     "answer": "Agree",
-    "explanation": "Equal rules prevent unfair advantages and keep things transparent."
+    "explanation_en": "Equal rules prevent unfair advantages and keep things transparent.",
+    "explanation_zh": "统一的规则能防止不公平的优势并保持透明度。"
   },
   {
     "question": "Climate change is one of the greatest threats to human lifestyles at present.",
     "answer": "Agree",
-    "explanation": "It's real and requires smart action, though not panic or economic self-harm."
+    "explanation_en": "It's real and requires smart action, though not panic or economic self-harm.",
+    "explanation_zh": "气候变化是真实的，需要明智的行动，但不应恐慌或自损经济。"
   },
   {
     "question": "It is very important for the international community to unite to address climate change.",
     "answer": "Strongly Agree",
-    "explanation": "Global problems need coordinated but voluntary solutions."
+    "explanation_en": "Global problems need coordinated but voluntary solutions.",
+    "explanation_zh": "全球性问题需要协调一致但基于自愿的解决方案。"
   },
   {
     "question": "Past societies were better than now.",
     "answer": "Disagree",
-    "explanation": "Life expectancy, technology, and rights have improved dramatically."
+    "explanation_en": "Life expectancy, technology, and rights have improved dramatically.",
+    "explanation_zh": "预期寿命、技术水平和权利保障都有了巨大的进步。"
   },
   {
     "question": "It is important to maintain past traditions.",
     "answer": "Neutral/Unsure",
-    "explanation": "Some are worth keeping if they serve us; others should adapt."
+    "explanation_en": "Some are worth keeping if they serve us; others should adapt.",
+    "explanation_zh": "有些传统如果对我们有益就值得保留；其他的则应当与时俱进。"
   },
   {
     "question": "We should look at the long term, not limited to our generation's time.",
     "answer": "Strongly Agree",
-    "explanation": "Sustainable thinking benefits our children and grandchildren."
+    "explanation_en": "Sustainable thinking benefits our children and grandchildren.",
+    "explanation_zh": "可持续的思维方式有利于我们的子孙后代。"
   },
   {
     "question": "Having rationality is more important than maintaining our culture.",
     "answer": "Agree",
-    "explanation": "Reason and evidence should guide us even when they challenge old customs."
+    "explanation_en": "Reason and evidence should guide us even when they challenge old customs.",
+    "explanation_zh": "理性和证据应引导我们，即使它们挑战旧有习俗。"
   },
   {
     "question": "Drug use should be legalized or decriminalized.",
     "answer": "Agree",
-    "explanation": "Personal choices with regulation reduce crime and allow treatment focus."
+    "explanation_en": "Personal choices with regulation reduce crime and allow treatment focus.",
+    "explanation_zh": "在监管下尊重个人选择能减少犯罪，并将重点转向治疗。"
   },
   {
     "question": "Same-sex marriage should be legal.",
     "answer": "Strongly Agree",
-    "explanation": "Adults in love deserve equal rights; it harms no one."
+    "explanation_en": "Adults in love deserve equal rights; it harms no one.",
+    "explanation_zh": "相爱的成年人应享有平等的权利；这不会伤害任何人。"
   },
   {
     "question": "All cultures in the world are equal, with no distinction of high or low.",
     "answer": "Agree",
-    "explanation": "Every culture has dignity, though some practices are objectively better or worse."
+    "explanation_en": "Every culture has dignity, though some practices are objectively better or worse.",
+    "explanation_zh": "每种文化都有其尊严，尽管某些具体做法客观上有优劣之分。"
   },
   {
     "question": "Extramarital sex is immoral.",
     "answer": "Disagree",
-    "explanation": "Consenting adults make their own moral choices in private."
+    "explanation_en": "Consenting adults make their own moral choices in private.",
+    "explanation_zh": "成年人在私人领域自主做出道德选择，只要双方同意。"
   },
   {
     "question": "If we fully accept immigrants, then it is important for them to integrate into our culture.",
     "answer": "Strongly Agree",
-    "explanation": "Successful immigration requires shared values for social harmony."
+    "explanation_en": "Successful immigration requires shared values for social harmony.",
+    "explanation_zh": "成功的移民融入需要共同的价值观以维护社会和谐。"
   },
   {
     "question": "Abortion should be prohibited in most or all cases.",
     "answer": "Disagree",
-    "explanation": "Early choice belongs to the woman; later restrictions make sense."
+    "explanation_en": "Early choice belongs to the woman; later restrictions make sense.",
+    "explanation_zh": "早期选择权属于女性；后期的限制是合理的。"
   },
   {
     "question": "People without legitimate reasons are prohibited from owning guns.",
     "answer": "Agree",
-    "explanation": "Responsible ownership with checks keeps communities safer."
+    "explanation_en": "Responsible ownership with checks keeps communities safer.",
+    "explanation_zh": "有审查机制的负责任持枪能让社区更安全。"
   },
   {
     "question": "I support government-funded universal healthcare.",
     "answer": "Agree",
-    "explanation": "A basic system ensures no one is left behind while still allowing private options."
+    "explanation_en": "A basic system ensures no one is left behind while still allowing private options.",
+    "explanation_zh": "基本的医疗体系确保没有人被遗弃，同时仍允许私营选项的存在。"
   },
   {
     "question": "Prostitution is illegal.",
     "answer": "Disagree",
-    "explanation": "Consensual adult work should be regulated, not criminalized."
+    "explanation_en": "Consensual adult work should be regulated, not criminalized.",
+    "explanation_zh": "成年人自愿从事的工作应受到监管，而非被定为犯罪。"
   },
   {
     "question": "Maintaining family values is crucial.",
     "answer": "Agree",
-    "explanation": "Stable families build stronger communities and happier lives."
+    "explanation_en": "Stable families build stronger communities and happier lives.",
+    "explanation_zh": "稳定的家庭能建设更强大的社区和更幸福的生活。"
   },
   {
     "question": "Pursuing progress at all costs is dangerous.",
     "answer": "Agree",
-    "explanation": "We need ethical guardrails so advancement actually improves human life."
+    "explanation_en": "We need ethical guardrails so advancement actually improves human life.",
+    "explanation_zh": "我们需要伦理底线，使进步真正改善人类生活。"
   },
   {
     "question": "Genetic modification is a force for good, even for humans.",
     "answer": "Agree",
-    "explanation": "Carefully regulated gene editing can cure diseases and enhance lives."
+    "explanation_en": "Carefully regulated gene editing can cure diseases and enhance lives.",
+    "explanation_zh": "在严格监管下的基因编辑可以治愈疾病并改善生活。"
   },
   {
     "question": "We should open borders to immigrants.",
     "answer": "Disagree",
-    "explanation": "Controlled, merit-based immigration protects resources and culture."
+    "explanation_en": "Controlled, merit-based immigration protects resources and culture.",
+    "explanation_zh": "有管控的、基于能力的移民政策能保护资源和文化。"
   },
   {
     "question": "The government should give foreigners the same treatment as domestic citizens.",
     "answer": "Disagree",
-    "explanation": "Citizenship carries specific rights and responsibilities."
+    "explanation_en": "Citizenship carries specific rights and responsibilities.",
+    "explanation_zh": "公民身份承载着特定的权利和责任。"
   },
   {
     "question": "Everyone should be treated equally regardless of culture or sexual orientation.",
     "answer": "Strongly Agree",
-    "explanation": "Basic human dignity and legal equality for all is non-negotiable."
+    "explanation_en": "Basic human dignity and legal equality for all is non-negotiable.",
+    "explanation_zh": "所有人的基本尊严和法律平等是不可妥协的。"
   },
   {
     "question": "It is important that we put collective goals first.",
     "answer": "Disagree",
-    "explanation": "Individual rights and choices create better outcomes than forced collectivism."
+    "explanation_en": "Individual rights and choices create better outcomes than forced collectivism.",
+    "explanation_zh": "个人权利和选择比强制的集体主义能产生更好的结果。"
   }
 ]
