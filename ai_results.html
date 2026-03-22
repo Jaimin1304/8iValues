@@ -728,6 +728,8 @@
         tradition,
         displayIdeology,
         displayName,
+        iconSrc,
+        bgClass,
       )
     }
 
@@ -742,7 +744,14 @@
       tradition,
       ideology,
       modelName,
+      iconSrc,
+      bgClass,
     ) {
+      // Preload model icon for banner
+      var modelIcon = new Image()
+      modelIcon.crossOrigin = "anonymous"
+      if (iconSrc) modelIcon.src = iconSrc
+
       var drawCanvas = function () {
         var c = document.createElement("canvas")
         var ctx = c.getContext("2d")
@@ -795,7 +804,42 @@
         ctx.textAlign = "left"
         ctx.fillText("8iValues", 20, 60)
         ctx.font = "400 30px Montserrat"
-        ctx.fillText(modelName, 20, 100)
+        // Draw model icon with circular background before model name
+        var textOffsetX = 20
+        if (modelIcon.complete && modelIcon.naturalWidth > 0) {
+          var circleRadius = 20
+          var circleCx = 20 + circleRadius
+          var circleCy = 100 - circleRadius + 6
+          var isDark = bgClass === "ai-icon-bg-dark"
+          // Draw circular background
+          ctx.beginPath()
+          ctx.arc(circleCx, circleCy, circleRadius, 0, 2 * Math.PI)
+          ctx.fillStyle = isDark ? "#1a1a1a" : "#f5f5f5"
+          ctx.fill()
+          // Draw icon (invert for dark backgrounds)
+          var iconPad = 10
+          var iconX = circleCx - circleRadius + iconPad
+          var iconY = circleCy - circleRadius + iconPad
+          var iconDraw = circleRadius * 2 - iconPad * 2
+          if (isDark) {
+            // Render icon to offscreen canvas and invert
+            var offC = document.createElement("canvas")
+            offC.width = iconDraw
+            offC.height = iconDraw
+            var offCtx = offC.getContext("2d")
+            offCtx.drawImage(modelIcon, 0, 0, iconDraw, iconDraw)
+            // Invert: draw white over with source-in, then invert composite
+            offCtx.globalCompositeOperation = "source-in"
+            offCtx.fillStyle = "#ffffff"
+            offCtx.fillRect(0, 0, iconDraw, iconDraw)
+            ctx.drawImage(offC, iconX, iconY, iconDraw, iconDraw)
+          } else {
+            ctx.drawImage(modelIcon, iconX, iconY, iconDraw, iconDraw)
+          }
+          ctx.fillStyle = "#222222" // Reset fill color
+          textOffsetX = 20 + circleRadius * 2 + 8
+        }
+        ctx.fillText(modelName, textOffsetX, 100)
         ctx.font = "50px Montserrat"
         ctx.fillText(ideology, 20, 160)
 
@@ -877,6 +921,18 @@
           img.onerror = resolve // Continue even if one fails
         })
       })
+
+      // Wait for model icon to load
+      if (iconSrc) {
+        if (modelIcon.complete) {
+          promises.push(Promise.resolve())
+        } else {
+          promises.push(new Promise(function (resolve) {
+            modelIcon.onload = resolve
+            modelIcon.onerror = resolve
+          }))
+        }
+      }
 
       if (document.fonts && document.fonts.ready) {
         promises.push(document.fonts.ready)
